@@ -14,6 +14,10 @@ import { EventsComponent } from './events/events.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { BookingComponent } from './booking/booking.component';
+import { HeaderComponent } from './layouts/header/header.component';
+import { FooterComponent } from './layouts/footer/footer.component';
+import { DefaultComponent } from './default/default.component';
+import { DefaultModule } from './default/default.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +27,10 @@ import { BookingComponent } from './booking/booking.component';
     EventsComponent,
     GalleryComponent,
     ContactComponent,
-    BookingComponent
+    BookingComponent,
+    HeaderComponent,
+    FooterComponent,
+    DefaultComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +38,8 @@ import { BookingComponent } from './booking/booking.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    CarouselModule
+    CarouselModule,
+    DefaultModule
   ],
   providers: [],
   bootstrap: [AppComponent]
