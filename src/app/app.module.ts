@@ -16,6 +16,10 @@ import { ContactComponent } from './contact/contact.component';
 import { BookingComponent } from './booking/booking.component';
 import { NavbarModule, CollapseModule, GridModule, HeaderModule, NavModule, DropdownModule } from '@coreui/angular';
 
+import { HeaderComponent } from './layouts/header/header.component';
+import { FooterComponent } from './layouts/footer/footer.component';
+import { DefaultComponent } from './default/default.component';
+import { DefaultModule } from './default/default.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +30,9 @@ import { NavbarModule, CollapseModule, GridModule, HeaderModule, NavModule, Drop
     GalleryComponent,
     ContactComponent,
     BookingComponent,
+    HeaderComponent,
+    FooterComponent,
+    DefaultComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +46,8 @@ import { NavbarModule, CollapseModule, GridModule, HeaderModule, NavModule, Drop
     GridModule,
     HeaderModule,
     NavModule,
-    DropdownModule
+    DropdownModule,
+    DefaultModule
   ],
   providers: [],
   bootstrap: [AppComponent]
