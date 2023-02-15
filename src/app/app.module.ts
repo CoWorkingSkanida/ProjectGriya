@@ -12,14 +12,14 @@ import { RoomComponent } from './room/room.component';
 import { FacilitesComponent } from './facilites/facilites.component';
 import { EventsComponent } from './events/events.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { ContactComponent } from './contact/contact.component';
 import { BookingComponent } from './booking/booking.component';
 import { NavbarModule, CollapseModule, GridModule, HeaderModule, NavModule, DropdownModule } from '@coreui/angular';
-
 import { HeaderComponent } from './layouts/header/header.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { DefaultComponent } from './default/default.component';
 import { DefaultModule } from './default/default.module';
+import { WeddingComponent } from './wedding/wedding.component';
+import { MeetingComponent } from './meeting/meeting.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,11 +28,12 @@ import { DefaultModule } from './default/default.module';
     FacilitesComponent,
     EventsComponent,
     GalleryComponent,
-    ContactComponent,
     BookingComponent,
     HeaderComponent,
     FooterComponent,
-    DefaultComponent
+    DefaultComponent,
+    WeddingComponent,
+    MeetingComponent
   ],
   imports: [
     BrowserModule,
