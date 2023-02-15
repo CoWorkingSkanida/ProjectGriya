@@ -14,6 +14,8 @@ import { EventsComponent } from './events/events.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { BookingComponent } from './booking/booking.component';
+import { NavbarModule, CollapseModule, GridModule, HeaderModule, NavModule, DropdownModule } from '@coreui/angular';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,7 @@ import { BookingComponent } from './booking/booking.component';
     EventsComponent,
     GalleryComponent,
     ContactComponent,
-    BookingComponent
+    BookingComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,13 @@ import { BookingComponent } from './booking/booking.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    CarouselModule
+    CarouselModule,
+    NavbarModule,
+    CollapseModule,
+    GridModule,
+    HeaderModule,
+    NavModule,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

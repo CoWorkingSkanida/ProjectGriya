@@ -21,4 +21,4 @@ export class TestComponent implements OnInit{
       src: '../assets/vue.webp',
     }
   }
-}
+} 
