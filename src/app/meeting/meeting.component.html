@@ -1,26 +1,36 @@
-<div class="h-screen" style="background-color: rgba(236, 254, 234, 1);">
-</div>
-
-<div class="footer">
-  <div class="row">
-      <div class="footer-col">
-          <div class="social-links">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
+<body>
+  <div class="h-screen" style="background-color: rgba(236, 254, 234, 1)">
+    <div class="carousel" style="margin-top: 5rem">
+      <c-carousel>
+        <c-carousel-indicators></c-carousel-indicators>
+        <c-carousel-inner>
+          <c-carousel-item *ngFor="let slide of slides">
+            <img [src]="slide.src" alt="{{ slide.title }}" class="d-block w-100" loading="lazy"/>
+          </c-carousel-item>
+        </c-carousel-inner>
+        <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+        <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+      </c-carousel>
+    </div>
+    <br />
+    <br />
+    <div class="body">
+      <ul>
+        <li class="any"><b>Detail</b></li>
+        <br />
+        <li class="any1"><b>Rooms</b></li>
+        <li>
+          <div>
+            <p style="padding: 15px 100px; font-size: larger"><b>Start From</b></p>
+            <button type="button" class="btn btn-success" style="margin-left: 85px" disabled>Rp.350.000,00</button>
           </div>
-      </div>        
-      <div class="footer-col">
-          <ul>
-              <li><a href="#">Jl. Serayu II No.44, Kedungsari, Kec. Magelang  </a></li>
-              <li><a href="#">Utara, Kota Magelang, Jawa Tengah 59155</a></li>
-              <div class="karepe" style="margin-top: 25px;">
-              <li><a href="#">Phone : (0293) 362185</a></li>
-              <li><a href="#">Email : wismasejahtera@gmail.com</a></li>
-              </div>
-          </ul>
-      </div>
+        </li>
+        <br>      
+          <section>Hotel Wisma Sejahtera menyediakan 14 Ruang Pertemuan yang tersedia untuk fungsi serbaguna dan dapat menampung dari 6 hingga 1500 orang. Fasilitas pertemuan kami dilengkapi dengan teknologi audio-visual modern, layar proyektor ukuran penuh, dan mikrofon nirkabel plus satu set fasilitas pertemuan standar bogor . Atas permintaan, kami juga menyediakan konferensi video dengan tampilan layar LED HD yang besar, dan mikrofon nirkabel ultra-sensitif yang dapat menampung ruang konferensi yang besar. Biarkan Pakar Meeting Wisma kami yang berbakat menangani semua detail rapat Anda untuk menyukseskan acara Anda.</section>
+      </ul>
+      <br/>
+      <br>
+      <hr>
+    </div>
   </div>
-  
-</div>
+</body>
