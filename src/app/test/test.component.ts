@@ -12,13 +12,13 @@ export class TestComponent implements OnInit{
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: '../assets/angular.webp',
+      src: '../assets/pexels-christian-heitz-842711 1 (1).png',
     };
     this.slides[1] = {
-      src: '../assets/react.webp',
+      src:  '../assets/pexels-christian-heitz-842711 1 (1).png',
     }
     this.slides[2] = {
-      src: '../assets/vue.webp',
+      src:  '../assets/pexels-christian-heitz-842711 1 (1).png',
     }
   }
 } 
