@@ -7,11 +7,12 @@
 // #carousel {
 //     z-index: 1;
 // }
-.container {
+.contain {
   min-width: 100%;
   margin: auto;
   position: relative;
   background-color: #f7f6f2;
+  padding: none;
 }
 
 .footer-col {
@@ -135,7 +136,7 @@ ul {
   }
 }
 
-.container {
+.contain {
   min-width: 100%;
   margin: auto;
   position: relative;
@@ -258,6 +259,7 @@ ul {
 }
 
 .column {
+  padding: 40px;
   margin-top: 10%;
   display: flex;
   flex-direction: column;
@@ -272,23 +274,24 @@ hr {
 
 .column .welkam {
   float: left;
+  margin-top: 40px;
   width: 50%;
   align-items: flex-start;
 }
 
 .column .ph1 {
-  margin: 20px;
+  margin: 40px;
   align-items: flex-end;
 }
 
 .ptext {
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 40px;
   margin-right: 40%;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 28px;
   color: #2c512b;
 }
@@ -317,7 +320,8 @@ hr {
   
   .ptext {
     margin-top: none;
-    margin-right: 0%;
+    margin-left: 20px;
+    margin-right: 20px;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -329,7 +333,7 @@ hr {
   .phv {
     float: right;
     position: relative;
-    right: none;
+    right: 10%;
     width: auto;
     padding-left: none;
   }
