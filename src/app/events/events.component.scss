@@ -7,12 +7,13 @@
 // #carousel {
 //     z-index: 1;
 // }
-.container {
-    min-width: 100%;
-    margin: auto;
-    position: relative;
-    background-color: #f7f6f2;
-  }
+.contain {
+  margin-top: 150px;
+  min-width: 100%;
+  margin: auto;
+  position: relative;
+  padding: none;
+}
   
   .header {
     background-color: rgb(255, 255, 255);
@@ -40,11 +41,89 @@
   ul {
     list-style: none;
   }
+
+  .cont {
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+    display: flex;
+    margin-top: 150px;
+    align-items: center;
+  }
+
+  .vl {
+    border-left: 3px solid #000000;
+    height: 300px;
+  }
+
+  .vl1 {
+    margin-left: 1%;
+    border-left: 3px solid #000000;
+    height: 300px;
+  }
+
+
+  .ptext{
+    position: relative;
+    left: 5%;
+    margin-right: 5%;
+  }
+
+  .specev ul.ph1{
+    width: 250px;
+    height: auto;
+    min-width: 200px;
+  }
+
+  .lain ul.lne{
+    width: 250px;
+    height: auto;
+    min-width: 200px;
+  }
+
+  @media (max-width: 768px) {
+    .cont {
+      margin-left: 5%;
+      margin-right: 5%;
+      float: left;
+      display: flex;
+      margin-top: 150px;
+      align-items: center;
+      flex-direction: column ;
+    }
+  
+    .vl {
+      border-left: 3px solid #000000;
+      height: 15px;
+      opacity: 0;
+    }
+  
+    .vl1 {
+      margin-left: 1%;
+      border-left: 3px solid #000000;
+      height: 0px;
+      opacity: 0;
+    }
+  
+  
+    .ptext{
+      position: relative;
+      left: 5%;
+      margin-right: 5%;
+    }
+  
+    .specev ul.ph1{
+      width: 250px;
+      height: auto;
+      min-width: 200px;
+    }
+  }
   
   .footer {
     background-color: #457543;
     padding: 70px 0;
     position: relative;
+    margin-top: 150px;
     bottom: 0;
     width: 100%;
   }
@@ -116,6 +195,8 @@
     color: #ffffff;
     background-color: #2a4b2a;
   }
+
+
   
   @media(max-width: 767px) {
     .footer-col {
@@ -144,11 +225,10 @@
     box-sizing: border-box;
   }
   
-  .container {
+  .contain {
     min-width: 100%;
     // margin: auto;
     position: absolute;
-    background-color: #f7f6f2;
   }
   
   .header {
