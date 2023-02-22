@@ -1,20 +1,54 @@
-<body >
-  <div class="h-screen" style="background-color: rgba(236, 254, 234, 1)">
-    <div class="carousel" style="margin-top: 5rem;">
+<body>
+  <div class="container" style="background-color: rgba(236, 254, 234, 1)">
+    <div class="carousel" style="margin-top: 5rem">
       <c-carousel>
-      <c-carousel-indicators></c-carousel-indicators>
-      <c-carousel-inner>
-        <c-carousel-item *ngFor="let slide of slides">
-          <img
-            [src]="slide.src"
-            alt="{{ slide.title }}"
-            class="d-block w-100"
-            loading="lazy" />
-        </c-carousel-item>
-      </c-carousel-inner>
-      <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
-      <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
-    </c-carousel>
-   </div>
- </div>
+        <c-carousel-indicators></c-carousel-indicators>
+        <c-carousel-inner>
+          <c-carousel-item *ngFor="let slide of slides">
+            <img
+              [src]="slide.src"
+              alt="{{ slide.title }}"
+              class="d-block w-100"
+              loading="lazy"
+            />
+          </c-carousel-item>
+        </c-carousel-inner>
+        <c-carousel-control
+          [routerLink]
+          caption="Previous"
+          direction="prev"
+        ></c-carousel-control>
+        <c-carousel-control
+          [routerLink]
+          caption="Next"
+          direction="next"
+        ></c-carousel-control>
+      </c-carousel>
+    </div>
+    <div class="column">
+      <div class="welkam">
+        <ul class="ph1">
+          <img src="../assets/Group 42.png" alt="" />
+        </ul>
+      </div>
+      <div class="phv">
+        <ul>
+          <img src="../assets/Group 2.png" alt="" />
+        </ul>
+      </div>
+      <p class="ptext">
+        Terletak 20,9 km dari Candi Borobudur, wisma sejahtera hotel
+        menawarkan akomodasi bintang 2 di Magelang dan memiliki teras.
+        Dengan taman, hotel bintang 2 ini memiliki kamar-kamar ber-AC dengan
+        Wi-Fi gratis, masing-masing dengan kamar mandi pribadi. Hotel ini
+        memiliki kamar keluarga. Kamar-kamar di hotel ini dilengkapi dengan
+        TV layar datar. Stasiun Tugu Yogyakarta berjarak 45,1 km dari hotel
+        wisma sejahtera, sedangkan Tugu Yogyakarta berjarak 45,1 km dari
+        properti. Bandara terdekat adalah Bandara Internasional Adisutjipto,
+        51,5 km dari akomodasi.
+      </p>
+      
+    </div>
+    
+  </div>
 </body>
