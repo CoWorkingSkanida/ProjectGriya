@@ -1,4 +1,5 @@
-<div class="navbar relative z-20 border-b" style="background-color: rgba(236, 254, 234, 1); padding-bottom: 15px; padding-top: 15px;">
+<div class="navbar relative z-20 border-b"
+  style="background-color: rgba(236, 254, 234, 1); padding-bottom: 15px; padding-top: 15px;">
   <div class="navbar-container container px-6 md:px-12 lg:container lg:mx-auto lg:px-6">
     <div class="flex items-center justify-between">
       <div class="relative z-20">
@@ -14,7 +15,9 @@
           <div aria-hidden="true" class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
         </label>
 
-        <div class="peer-checked:translate-x-0 fixed inset-0 w-[calc(100%-4.5rem)] translate-x-[-100%] border-r shadow-xl transition duration-300 lg:border-r-0 lg:w-auto lg:static lg:shadow-none lg:translate-x-0" style="background-color: rgba(236, 254, 234, 1);">
+        <div
+          class="peer-checked:translate-x-0 fixed inset-0 w-[calc(100%-4.5rem)] translate-x-[-100%] border-r shadow-xl transition duration-300 lg:border-r-0 lg:w-auto lg:static lg:shadow-none lg:translate-x-0"
+          style="background-color: rgba(236, 254, 234, 1);">
           <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row">
             <ul class="px-6 pt-32 text-gray-700 space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0">
               <li>
@@ -24,17 +27,17 @@
               </li>
               <hr>
               <li class="menu-item">
-                <a  id="room" class="group relative">
-                  <span class="sp relative">MEETING & EVENTS ⮟</span>
+                <a id="room" class="group relative">
+                  <span class="sp relative">MEETING & EVENTS <i class="fa-solid fa-caret-down"></i></span>
                   <ul class="drop-menu">
                     <li class="drop-menu-item">
-                        <a [routerLink]="['/meeting']">MEETING ROOM</a>
+                      <a [routerLink]="['/meeting']">MEETING ROOM</a>
                     </li>
                     <hr>
                     <li class="drop-menu-item">
-                        <a [routerLink]="['/events']">EVENTS</a>
+                      <a [routerLink]="['/events']">EVENTS</a>
                     </li>
-                </ul>
+                  </ul>
                 </a>
               </li>
               <hr>

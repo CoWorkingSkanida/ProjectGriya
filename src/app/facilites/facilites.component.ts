@@ -6,19 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./facilites.component.scss']
 })
 export class FacilitesComponent implements OnInit {
-  slides: any[] = new Array(3).fill({id: -1, src: '', title: '', subtitle: ''});
+  slides: any[] = new Array(3).fill({
+    id: -1,
+    src: '',
+    title: '',
+    subtitle: '',
+  });
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: '../assets/angular.webp',
+      src: '../assets/pexels-christian-heitz-842711 1 (1).png',
     };
     this.slides[1] = {
-      src: '../assets/react.webp',
-    }
+      src: '../assets/pexels-christian-heitz-842711 1 (1).png',
+    };
     this.slides[2] = {
-      src: '../assets/vue.webp',
-    }
+      src: '../assets/pexels-christian-heitz-842711 1 (1).png',
+    };
   }
-} 
+}
