@@ -8,7 +8,7 @@
             <img
               [src]="slide.src"
               alt="{{ slide.title }}"
-              class="d-block w-100"
+              class="d-block w-100 h-100 "
               loading="lazy"
             />
           </c-carousel-item>
@@ -47,6 +47,66 @@
         terdekat adalah Bandara Internasional Adisutjipto, 51,5 km dari
         akomodasi.
       </p>
+      <div class="">
+        <!-- <a routerLink="/booking" class="btn red block circular">
+          Learn More
+        </a> -->
+        <div class="ptext" style="margin-left: 1, 2px">
+          <div [ngClass]="{ limitTextHeight: isReadmore }">
+            memiliki kamar keluarga. Kamar-kamar di hotel ini dilengkapi dengan
+            TV layar datar. Stasiun Tugu Yogyakarta berjarak 45,1 km dari hotel
+            wisma sejahtera, sedangkan Tugu Yogyakarta berjarak 45,1 km dari
+            properti. Bandara terdekat adalah Bandara Internasional Adisutjipto,
+            51,5 km dari akomodasi.
+          </div>
+        </div>
+        <button
+          type="button"
+          (click)="showText()"
+          class="btn red block circular"
+        >
+          {{ isReadmore ? "Learn More" : "Read Less" }}
+        </button>
+      </div>
+    </div>
+    <div class="center">
+      <img src="../assets/Group 3.png" />
+    </div>
+    <!-- <section style="margin-top: 5%;">
+      <img src="../assets/Group 45.png" style="margin: 20px;">
+    </section> -->
+    <div
+      class="mid"
+      style="margin: 40px;margin: 20px;display: flex;justify-content: flex-end;flex-direction: row-reverse; padding-left: 3%;">
+      <a href="/booking"><img src="../assets/Group 45.png" /></a>
+    </div>
+    <div class="mid" style="margin: 40px;margin: 20px;display: flex;justify-content: space-between;flex-direction: row-reverse; padding-top: 5%; padding-right: 3%;">
+      <a href="/booking"><img src="../assets/Group 46.png" /></a>    </div>
+    <section style="padding-top: 5%;"></section>
+  </div>
+
+  <div class="footer">
+    <div class="row">
+      <div class="footer-col">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li>
+            <a href="#">Jl. Serayu II No.44, Kedungsari, Kec. Magelang </a>
+          </li>
+          <li><a href="#">Utara, Kota Magelang, Jawa Tengah 59155</a></li>
+          <div class="karepe" style="margin-top: 25px">
+            <li><a href="#">Phone : (0293) 362185</a></li>
+            <li><a href="#">Email : wismasejahtera@gmail.com</a></li>
+          </div>
+        </ul>
+      </div>
     </div>
   </div>
 </body>

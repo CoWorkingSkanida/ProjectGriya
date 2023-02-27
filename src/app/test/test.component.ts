@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-test',
@@ -13,17 +14,28 @@ export class TestComponent implements OnInit {
     subtitle: '',
   });
 
-  constructor() {}
+  isReadmore = true;
+  isLearnbuy = true;
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: '../assets/pexels-christian-heitz-842711 1 (1).png',
+      src: '../assets/photo-1627677063748-0de05b0be717.jpg',
     };
     this.slides[1] = {
-      src: '../assets/pexels-christian-heitz-842711 1 (1).png',
+      src: '../assets/photo-1627677063748-0de05b0be717.jpg',
     };
     this.slides[2] = {
-      src: '../assets/pexels-christian-heitz-842711 1 (1).png',
+      src: '../assets/photo-1627677063748-0de05b0be717.jpg',
     };
+  }
+
+  showText() {
+    this.isReadmore = !this.isReadmore;
+  }
+
+  learnBuy() {
+    this.router.navigateByUrl('/booking');
   }
 }
