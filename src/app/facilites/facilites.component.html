@@ -2,27 +2,14 @@
     <div class="contain">
         <div class="carousel" style="margin-top: 5rem">
             <c-carousel>
-              <c-carousel-indicators></c-carousel-indicators>
-              <c-carousel-inner>
-                <c-carousel-item *ngFor="let slide of slides">
-                  <img
-                    [src]="slide.src"
-                    alt="{{ slide.title }}"
-                    class="d-block w-100"
-                    loading="lazy"
-                  />
-                </c-carousel-item>
-              </c-carousel-inner>
-              <c-carousel-control
-                [routerLink]
-                caption="Previous"
-                direction="prev"
-              ></c-carousel-control>
-              <c-carousel-control
-                [routerLink]
-                caption="Next"
-                direction="next"
-              ></c-carousel-control>
+                <c-carousel-indicators></c-carousel-indicators>
+                <c-carousel-inner>
+                    <c-carousel-item *ngFor="let slide of slides">
+                        <img [src]="slide.src" alt="{{ slide.title }}" class="d-block w-100" loading="lazy" />
+                    </c-carousel-item>
+                </c-carousel-inner>
+                <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+                <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
             </c-carousel>
         </div>
         <div class="cont">
@@ -101,20 +88,7 @@
                             Invoice disediakan
                         </p>
                     </div>
-                    <div class="kamarmndi">
-                        <p class="jdl" style="font-family: Poppins; font-weight: bold;">
-                            <i class="fa-solid fa-language"></i>
-                            Bahasa yang digunakan
-                        </p>
-                        <p class="itm">
-                            <i class="fa-solid fa-circle fa-2xs"></i>
-                            Bahasa Inggris
-                        </p>
-                        <p class="itm">
-                            <i class="fa-solid fa-circle fa-2xs"></i>
-                            Bahasa Indonesia
-                        </p>
-                    </div>
+
                 </div>
                 <div class="co">
                     <div class="kamarmndi">
@@ -157,13 +131,27 @@
                             Koneksi Wi-Fi
                         </p>
                     </div>
+                    <div class="kamarmndi">
+                        <p class="jdl" style="font-family: Poppins; font-weight: bold;">
+                            <i class="fa-solid fa-language"></i>
+                            Bahasa yang digunakan
+                        </p>
+                        <p class="itm">
+                            <i class="fa-solid fa-circle fa-2xs"></i>
+                            Bahasa Inggris
+                        </p>
+                        <p class="itm">
+                            <i class="fa-solid fa-circle fa-2xs"></i>
+                            Bahasa Indonesia
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
 
-<!-- <div class="footer">
+<div class="footer">
   <div class="row">
       <div class="footer-col">
           <div class="social-links">
@@ -184,5 +172,4 @@
           </ul>
       </div>
   </div>
-  
-</div> -->
+</div>
