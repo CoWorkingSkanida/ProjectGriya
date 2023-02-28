@@ -1,26 +1,93 @@
-<div class="h-screen" style="background-color: rgba(236, 254, 234, 1);">
-</div>
-
-<div class="footer">
-  <div class="row">
-      <div class="footer-col">
-          <div class="social-links">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-      </div>        
-      <div class="footer-col">
-          <ul>
-              <li><a href="#">Jl. Serayu II No.44, Kedungsari, Kec. Magelang  </a></li>
-              <li><a href="#">Utara, Kota Magelang, Jawa Tengah 59155</a></li>
-              <div class="karepe" style="margin-top: 25px;">
-              <li><a href="#">Phone : (0293) 362185</a></li>
-              <li><a href="#">Email : wismasejahtera@gmail.com</a></li>
-              </div>
-          </ul>
+<body>
+  <div class="contain">
+    <div class="carousel" style="margin-top: 5rem">
+      <c-carousel>
+        <c-carousel-indicators></c-carousel-indicators>
+        <c-carousel-inner>
+          <c-carousel-item *ngFor="let slide of slides">
+            <img
+              [src]="slide.src"
+              alt="{{ slide.title }}"
+              class="d-block w-100"
+              loading="lazy"
+            />
+          </c-carousel-item>
+        </c-carousel-inner>
+        <c-carousel-control
+          [routerLink]
+          caption="Previous"
+          direction="prev"
+        ></c-carousel-control>
+        <c-carousel-control
+          [routerLink]
+          caption="Next"
+          direction="next"
+        ></c-carousel-control>
+      </c-carousel>
+    </div>
+    <div class="cont">
+      <div class="specev">
+        <ul class="ph1">
+          <img src="../assets/Group 48.png" />
+        </ul>
       </div>
+      <div class="vl"></div>
+      <div class="vl1"></div>
+      <div class="tt">
+        <p class="jtext mt-3">Wedding Information</p>
+        <p class="ptext">
+          Hotel Wisma Sejahtera Wedding Organizer adalah pilihan terbaik untuk
+          pernikahan dan pesta Anda yang sempurna dan eksklusif. Kami menawarkan
+          pengaturan dan layanan pernikahan yang komprehensif dengan gaya
+          tradisional dan Internasional. Kami juga memberikan layanan lengkap
+          terbaik kami, termasuk upacara master, dekorasi, tata rias, rias
+          rambut, foto pre-wedding, dan banyak lainnya sesuai kebutuhan Anda.
+        </p>
+
+        <!-- <p class="jtext mt-3">Fasilitas kamar</p>
+        <p class="ptext">
+          <i class="fa-solid fa-circle fa-2xs"></i>
+          AC
+        </p>
+        <p class="ptext">
+          <i class="fa-solid fa-circle fa-2xs"></i>
+          Air minum
+        </p>
+        <p class="ptext">
+          <i class="fa-solid fa-circle fa-2xs"></i>
+          Televisi
+        </p>
+        <p class="ptext">
+          <i class="fa-solid fa-circle fa-2xs"></i>
+          Kamar Mandi
+        </p> -->
+        <p class="jtext mt-3 mb-6">
+          Mengapa Anda Harus Memilih Hotel Salak The Heritage untuk Pernikahan
+          Anda?
+        </p>
+        <p class="ptext">
+          1. Perencana Pernikahan yang Profesional dan Berkomitmen Tinggi
+          Perencana pernikahan kami dapat berkomunikasi dalam Bahasa Inggris dan
+          Bahasa Indonesia. Tim kami memiliki pengalaman lebih dari 20 tahun
+          dalam menyelenggarakan pesta pernikahan dengan berbagai gaya dan
+          pengaturan, VVIP dan jumlah tamu yang tinggi, membantu Anda
+          menciptakan acara pernikahan yang berkesan.
+        </p>
+        <p class="ptext" style="padding-top: 1%;">
+          2. Makanan dan Minuman Berkualitas Hotel Bintang 4 dari Chef
+          Profesional Kami menyediakan penyedia makanan dan minuman yang
+          berdedikasi tinggi dan profesional untuk menciptakan serangkaian
+          pilihan menu unik yang sangat sesuai dengan selera dan gaya Anda,
+          seperti Nasi Goreng Mozzarella, Rendang Pagaruyung, Sate Sosis Buatan
+          Rumah, dll.
+        </p>
+        <p class="ptext"style="padding-top: 1%;">
+          3. Bekerjasama dengan Penyedia Pernikahan Berpengalaman Kami memiliki
+          mitra dekorator, pengantin, fotografer, pembawa acara, dan hiburan
+          profesional dan berpengalaman yang akan membantu Anda memilih layanan
+          terbaik, dan memberi Anda diskon besar.
+        </p>
+      </div>
+    </div>
   </div>
-  
-</div>
+</body>

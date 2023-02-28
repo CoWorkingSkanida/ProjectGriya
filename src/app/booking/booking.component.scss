@@ -1,0 +1,106 @@
+.contain {
+    min-width: 100%;
+    margin: auto;
+    position: relative;
+    padding: none;
+    margin-top: 6rem;
+  }
+
+  .cont {
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+    display: flex;
+    margin-top: 70px;
+    align-items: center;
+  }
+
+  .vl {
+    border-left: 3px solid #000000;
+    height: 400px;
+  }
+
+  .vl1 {
+    margin-left: 1%;
+    border-left: 3px solid #000000;
+    height: 400px;
+  }
+
+
+  .ptext{
+    position: relative;
+    left: 5%;
+    margin-right: 5%;
+  }
+
+  .jtext{
+    font-weight: bold;
+    position: relative;
+    left: 5%;
+    margin-right: 5%;
+  }
+
+  .tt{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .specev ul.ph1{
+    width: 250px;
+    height: auto;
+    min-width: 200px;
+  }
+
+  .lain ul.lne{
+    width: 250px;
+    height: auto;
+    min-width: 200px;
+  }
+
+  @media (max-width: 768px) {
+    .cont {
+      margin-left: 5%;
+      margin-right: 5%;
+      float: left;
+      display: flex;
+      margin-top: 150px;
+      align-items: center;
+      flex-direction: column ;
+    }
+  
+    .vl {
+      border-left: 3px solid #000000;
+      height: 15px;
+      opacity: 0;
+    }
+  
+    .vl1 {
+      margin-left: 1%;
+      border-left: 3px solid #000000;
+      height: 0px;
+      opacity: 0;
+    }
+  
+  
+    .ptext{
+      position: relative;
+      left: 5%;
+      text-align: left;
+      margin-right: 5%;
+    }
+    .jtext{
+      font-weight: bold;
+      position: relative;
+      left: 5%;
+      text-align: left;
+      margin-right: 5%;
+    }
+  
+    .specev ul.ph1{
+      display: flex;
+      justify-content: center;
+      width: 250px;
+      height: auto;
+      min-width: 200px;
+    }
+  }
