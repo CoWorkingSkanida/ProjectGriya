@@ -1,36 +1,130 @@
 <body>
   <div class="h-screen" style="background-color: rgba(236, 254, 234, 1)">
-    <div class="carousel" style="margin-top: 5rem">
+    <div class="carousel" style="margin-top: 5rem;">
       <c-carousel>
-        <c-carousel-indicators></c-carousel-indicators>
-        <c-carousel-inner>
-          <c-carousel-item *ngFor="let slide of slides">
-            <img [src]="slide.src" alt="{{ slide.title }}" class="d-block w-100" loading="lazy"/>
-          </c-carousel-item>
-        </c-carousel-inner>
-        <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
-        <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
-      </c-carousel>
-    </div>
-    <br />
-    <br />
-    <div class="body">
-      <ul>
-        <li class="any"><b>Detail</b></li>
-        <br />
-        <li class="any1"><b>Rooms</b></li>
-        <li>
-          <div>
-            <p style="padding: 15px 100px; font-size: larger"><b>Start From</b></p>
-            <button type="button" class="btn btn-success" style="margin-left: 85px" disabled>Rp.350.000,00</button>
-          </div>
-        </li>
-        <br>      
-          <section>Hotel Wisma Sejahtera menyediakan 14 Ruang Pertemuan yang tersedia untuk fungsi serbaguna dan dapat menampung dari 6 hingga 1500 orang. Fasilitas pertemuan kami dilengkapi dengan teknologi audio-visual modern, layar proyektor ukuran penuh, dan mikrofon nirkabel plus satu set fasilitas pertemuan standar bogor . Atas permintaan, kami juga menyediakan konferensi video dengan tampilan layar LED HD yang besar, dan mikrofon nirkabel ultra-sensitif yang dapat menampung ruang konferensi yang besar. Biarkan Pakar Meeting Wisma kami yang berbakat menangani semua detail rapat Anda untuk menyukseskan acara Anda.</section>
-      </ul>
+      <c-carousel-indicators></c-carousel-indicators>
+      <c-carousel-inner>
+        <c-carousel-item *ngFor="let slide of slides">
+          <img
+            [src]="slide.src"
+            alt="{{ slide.title }}"
+            class="d-block w-100"
+            loading="lazy" />
+        </c-carousel-item>
+      </c-carousel-inner>
+      <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+      <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+    </c-carousel>
+   </div>
+    
+      <div class="cont">
+        <div class="specev">
+            <ul class="ph1">
+              <img src="..\assets\detailroomsfont.svg" alt="">
+            </ul>
+        </div>
+        <div class="vl"></div>
+        <div class="vl1"></div>
+        <div class="ptext">
+          <h2>Meeting Information</h2>
+          <p>Hotel Wisma Sejahtera menyediakan 14 Ruang Pertemuan yang tersedia untuk fungsi serbaguna dan dapat menampung dari 6 hingga 1500 orang. Fasilitas pertemuan kami dilengkapi dengan teknologi audio-visual modern, layar proyektor ukuran penuh, dan mikrofon nirkabel plus satu set fasilitas pertemuan standar bogor . Atas permintaan, kami juga menyediakan konferensi video dengan tampilan layar LED HD yang besar, dan mikrofon nirkabel ultra-sensitif yang dapat menampung ruang konferensi yang besar. Biarkan Pakar Meeting Wisma kami yang berbakat menangani semua detail rapat Anda untuk menyukseskan acara Anda.
+          </p>
+          <h2>Paket Pertemuan Eksklusif</h2>
+          <ul>
+            <li>1. PAKET PERTEMUAN FULL BOARD akomodasi satu malam,1 Sarapan Prasmanan,1 Prasmanan Makan Siang,1 Prasmanan Makan Malam</li>
+            <li>2. PAKET RAPAT SEHARI PENUH1 Prasmanan Makan Siang, 1 Prasmanan Makan Malam, 2 x Rehat Kopi</li>
+            <li>3. PAKET PERTEMUAN SATU HARI1 Prasmanan Makan Siang atau 1 Prasmanan Makan Malam, 2 x Rehat Kopi</li>
+            <li>4. PAKET PERTEMUAN HALF DAY1 Prasmanan Makan Siang atau 1 Prasmanan Makan Malam, 1 x Rehat Kopi</li>
+          </ul>  
+        </div>   
       <br/>
       <br>
       <hr>
     </div>
-  </div>
+        <!-- <p class="ruang" style="font-size:30px; text-align: center; font-family: Poppins; width: 100%;">
+          <b>Ruang Pertemuan & Ruang Pameran</b>
+        </p>
+        <br> -->
+      
+    </div>
 </body>
+
+
+
+<br>
+<br>
+<br>
+
+<div class="container">
+  <!--Product Grid-->
+
+  <b style="font-size:30px; text-align: center; font-family: Poppins; width: 100%; margin-bottom: 2%; line-height: 1;">Ruang Pertemuan & Ruang Pameran</b>
+
+  <div id="div1">
+    <section class="section-grid">
+    <div class="grid-prod">
+      <div class="prod-grid"><img src="../assets/coba.svg" alt="kalita">
+        <h2><b>Padjajaran 1</b></h2>
+               <ul class="bbi">              
+                 <li>Lantai   : lantai 4TH</li>
+                 <li>Dimensi   : 12,5 x 10,5m2</li> 
+                 <li>Tinggi   : 3,1 m</li> 
+                 <li>Teater   : 70 - 100</li> 
+                 <li>Kelas   : 40 - 70</li> 
+                 <li>Meja bundar   : 30 - 50</li> 
+                 <li>Bentuk-U   : 20 - 40</li> 
+                 <li>Penerimaan   : 100 - 150</li> 
+               </ul>
+               <br>
+            
+      </div>
+      <div class="prod-grid"><img src="../assets/coba.svg" alt="kalita">
+        <h2><b>Padjajaran 2</b></h2>
+               <ul class="bbi">              
+                 <li>Lantai   : lantai 4TH</li>
+                 <li>Dimensi   : 12,5 x 10,5m2</li> 
+                 <li>Tinggi   : 3,1 m</li> 
+                 <li>Teater   : 70 - 100</li> 
+                 <li>Kelas   : 40 - 70</li> 
+                 <li>Meja bundar   : 30 - 50</li> 
+                 <li>Bentuk-U   : 20 - 40</li> 
+                 <li>Penerimaan   : 100 - 150</li> 
+               </ul>
+               <br>
+               
+            
+      </div>
+      <div class="prod-grid"><img src="../assets/coba.svg" alt="kalita">
+        <h2><b>Padjajaran 3</b></h2>
+               <ul class="bbi">              
+                 <li>Lantai   : lantai 4TH</li>
+                 <li>Dimensi   : 12,5 x 10,5m2</li> 
+                 <li>Tinggi   : 3,1 m</li> 
+                 <li>Teater   : 70 - 100</li> 
+                 <li>Kelas   : 40 - 70</li> 
+                 <li>Meja bundar   : 30 - 50</li> 
+                 <li>Bentuk-U   : 20 - 40</li> 
+                 <li>Penerimaan   : 100 - 150</li> 
+               </ul>
+               <br>
+      </div>
+      <div class="prod-grid"><img src="../assets/coba.svg" alt="kalita">
+       <h2><b>Padjajaran 4</b></h2>
+              <ul class="bbi">              
+                <li>Lantai   : lantai 4TH</li>
+                <li>Dimensi   : 12,5 x 10,5m2</li> 
+                <li>Tinggi   : 3,1 m</li> 
+                <li>Teater   : 70 - 100</li> 
+                <li>Kelas   : 40 - 70</li> 
+                <li>Meja bundar   : 30 - 50</li> 
+                <li>Bentuk-U   : 20 - 40</li> 
+                <li>Penerimaan   : 100 - 150</li> 
+              </ul>
+              <br>
+          
+     </div>
+    </div>
+     </section> 
+  </div>
+
+</div>  
