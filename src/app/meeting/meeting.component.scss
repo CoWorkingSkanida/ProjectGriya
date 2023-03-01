@@ -449,20 +449,20 @@ h2{
   text-align: center;
 }
 
-.btn{
-  background: darkcyan;
-  border: 1px solid darkcyan;
-  border-radius: 4px;
-  color: white;
-  font-size: 22px;
-  width: 200px;
-  height: 40px;
-  position: right;
-  margin: 10px;
-  margin-right: 35%; 
-  letter-spacing: 1px;
-  display: inline-block;
-}
+// .btn{
+//   background: darkcyan;
+//   border: 1px solid darkcyan;
+//   border-radius: 4px;
+//   color: white;
+//   font-size: 22px;
+//   width: 200px;
+//   height: 40px;
+//   position: right;
+//   margin: 10px;
+//   margin-right: 35%; 
+//   letter-spacing: 1px;
+//   display: inline-block;
+// }
 
 /*CSS List*/
 .section-list{
@@ -483,33 +483,31 @@ table tr td {
 tr td img{
   width:100%;
 }
-.btn-list{
-    background: darkcyan;
-    border: 1px solid darkcyan;
-    border-radius: 6px;
-    color: white;
-    font-size: 22px;
-    width: 200px;
-    height: 40px;
-    position: right;
-    margin: 10px; 
-    margin-top: 10%;
-    letter-spacing: 1px;
-    display: inline-block;
+// .btn-list{
+//     background: darkcyan;
+//     border: 1px solid darkcyan;
+//     border-radius: 6px;
+//     color: white;
+//     font-size: 22px;
+//     width: 200px;
+//     height: 40px;
+//     // position: right;
+//     margin: 10px; 
+//     margin-top: 10%;
+//     letter-spacing: 1px;
+//     display: inline-block;
     
-}
+// }
 .btn-list:hover{
     background: white;
     border: 2px solid darkcyan;
     
     color: darkcyan;
 
-    margin: 10%; 
+    // margin: 10%; 
 
 }
-button{
-  float: right;
-}
+
 
 @media (min-width : 320px) and (max-width : 480px) { 
   .section-list, .buttons{
