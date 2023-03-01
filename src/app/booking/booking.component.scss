@@ -104,3 +104,256 @@
       min-width: 200px;
     }
   }
+
+  ////////////    ////////////    ////////////    //////////// 
+  //              //              //              //
+  //              //              //              //
+  //              //              //              //
+  ////////////    //              ////////////    //////////// 
+            //    //                        //              //
+            //    //                        //              //
+            //    //                        //              //
+  ////////////    ////////////    ////////////    //////////// 
+  
+  .footer {
+    background-color: #457543;
+    padding: 70px 0;
+    margin-top: 35%;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .social-links {
+    margin-top: 10%;
+  }
+  
+  .footer-col {
+    width: 25%;
+    padding-left: 5%;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #020202;
+    padding-left: 8px;
+  }
+  
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #457543;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover {
+    color: #ffffff;
+    background-color: #2a4b2a;
+  }
+
+
+  
+  @media(max-width: 767px) {
+    .footer {
+      margin-top: 600px;
+    }
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+  
+  }
+  
+  @media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+  
+  }
+  
+  
+  body {
+   
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1920px;
+    margin: 0px;
+    justify-content: space-between;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+
+// product list style
+
+
+//  
+
+.buttons{
+  font-size: 22px;
+  margin-top: 2%;
+  margin-left: 4.2%;
+}
+
+.fa:hover{
+  color: darkcyan;
+}
+
+.container{
+display: flex;
+flex-flow: column nowrap;
+padding-top: 5%;
+}
+/*CSS Grid*/
+.section-grid{
+ display: flex; 
+ padding-left: 25px;
+ padding-right: 25px;
+}
+.grid-prod{
+flex: 1 1 auto;
+display: flex; 
+flex-flow: row wrap;  
+}
+.prod-grid{
+flex: 1 1 35%;
+margin:2%;
+padding:12px;
+background-color: #daeeda;
+border-radius: 12px;
+// box-shadow: 20px;
+// border: 2px solid #457543;
+}
+
+.prod-grid img{
+width:100%;
+border-radius: 12px;
+}
+h3{
+text-align: center;
+line-height: 1.5;
+letter-spacing: 1px;
+font-family: Poppins;
+font-size: 20px;
+padding: 1rem;
+}
+
+h2{
+text-align: center;
+line-height: 1.5;
+letter-spacing: 1px;
+font-family: Poppins;
+font-size: 20px;
+padding: 10px;
+}
+
+.bbi{
+font-family: Poppins;
+font-size: large;
+letter-spacing: 2px;
+padding: 2%;
+text-align: center;
+}
+
+.btn{
+background: darkcyan;
+border: 1px solid darkcyan;
+border-radius: 4px;
+color: white;
+font-size: 22px;
+width: 200px;
+height: 40px;
+position: right;
+margin: 10px;
+margin-right: 35%; 
+letter-spacing: 1px;
+display: inline-block;
+}
+
+/*CSS List*/
+.section-list{
+ display: flex; 
+ padding: 2% 4%; 
+}
+table {
+width: 100%;
+margin: 10px 10px;
+border:2px solid #000;
+border-collapse: collapse;
+border-spacing: 0;
+}
+table tr td {
+padding: 10px;
+border-top: 2px solid #000;
+}
+tr td img{
+width:100%;
+}
+.btn-list{
+  background: darkcyan;
+  border: 1px solid darkcyan;
+  border-radius: 6px;
+  color: white;
+  font-size: 22px;
+  width: 200px;
+  height: 40px;
+  position: right;
+  margin: 10px; 
+  margin-top: 10%;
+  letter-spacing: 1px;
+  display: inline-block;
+  
+}
+.btn-list:hover{
+  background: white;
+  border: 2px solid darkcyan;
+  
+  color: darkcyan;
+
+  margin: 10%; 
+
+}
+button{
+float: right;
+}
+
+@media (min-width : 320px) and (max-width : 480px) { 
+.section-list, .buttons{
+  display: none;
+}
+}
