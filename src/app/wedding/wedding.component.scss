@@ -63,7 +63,7 @@
 
   .jtext{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 19px;
     position: relative;
     left: 5%;
     padding-bottom: 1%;
@@ -119,11 +119,20 @@
       margin-right: 5%;
     }
     .jtext{
-      font-weight: bold;
+      // font-weight: bold;
+      font-size: large;
+      word-spacing:8px;
+      line-height: 1.4;
       position: relative;
       left: 5%;
       text-align: left;
       margin-right: 5%;
+    }
+
+    .ptext {
+      font-size: 15px;
+      line-height: 1.9;
+      word-spacing: 2.0;
     }
   
     .specev ul.ph1{

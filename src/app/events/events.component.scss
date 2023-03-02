@@ -110,6 +110,7 @@
       position: relative;
       left: 5%;
       text-align: center;
+      line-height: 25px;
       margin-right: 5%;
     }
   
@@ -198,7 +199,7 @@
 
 
   
-  @media(max-width: 767px) {
+  @media(max-width: 1024px) {
     .footer {
       margin-top: 50%;
     }
