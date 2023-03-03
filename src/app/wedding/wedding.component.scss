@@ -59,14 +59,14 @@ ul {
   margin-right: 5%;
 }
 
-.jtext {
-  font-weight: bold;
-  font-size: 20px;
-  position: relative;
-  left: 5%;
-  padding-bottom: 1%;
-  margin-right: 5%;
-}
+  .jtext{
+    font-weight: bold;
+    font-size: 19px;
+    position: relative;
+    left: 5%;
+    padding-bottom: 1%;
+    margin-right: 5%;
+  }
 
 .tt {
   display: flex;
@@ -85,88 +85,98 @@ ul {
   min-width: 200px;
 }
 
-@media (max-width: 768px) {
-  .cont {
-    margin-left: 5%;
-    margin-right: 5%;
-    float: left;
-    display: flex;
-    // margin-top: 150px;
-    align-items: center;
-    flex-direction: column;
+  @media (max-width: 768px) {
+    .cont {
+      margin-left: 5%;
+      margin-right: 5%;
+      float: left;
+      display: flex;
+      // margin-top: 150px;
+      align-items: center;
+      flex-direction: column ;
+    }
+  
+    .vl {
+      border-left: 3px solid #000000;
+      height: 15px;
+      opacity: 0;
+    }
+  
+    .vl1 {
+      margin-left: 1%;
+      border-left: 3px solid #000000;
+      height: 0px;
+      opacity: 0;
+    }
+  
+  
+    .ptext{
+      position: relative;
+      left: 5%;
+      text-align: left;
+      margin-right: 5%;
+    }
+    .jtext{
+      // font-weight: bold;
+      font-size: large;
+      word-spacing:8px;
+      line-height: 1.4;
+      position: relative;
+      left: 5%;
+      text-align: left;
+      margin-right: 5%;
+    }
+
+    .ptext {
+      font-size: 15px;
+      line-height: 1.9;
+      word-spacing: 2.0;
+    }
+  
+    .specev ul.ph1{
+      display: flex;
+      justify-content: center;
+      width: 250px;
+      height: auto;
+      min-width: 200px;
+    }
   }
 
-  .vl {
-    border-left: 3px solid #000000;
-    height: 15px;
-    opacity: 0;
+  ////////////    ////////////    ////////////    //////////// 
+  //              //              //              //
+  //              //              //              //
+  //              //              //              //
+  ////////////    //              ////////////    //////////// 
+            //    //                        //              //
+            //    //                        //              //
+            //    //                        //              //
+  ////////////    ////////////    ////////////    //////////// 
+  
+  .footer {
+    background-color: #457543;
+    padding: 70px 0;
+    margin-top: 3%;
+    bottom: 0;
+    width: 100%;
   }
-
-  .vl1 {
-    margin-left: 1%;
-    border-left: 3px solid #000000;
-    height: 0px;
-    opacity: 0;
+  
+  .social-links {
+    margin-top: 10%;
   }
-
-  .ptext {
+  
+  .footer-col {
+    width: 25%;
+    padding-left: 5%;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
     position: relative;
-    left: 5%;
-    text-align: left;
-    margin-right: 5%;
   }
-  .jtext {
-    font-weight: bold;
-    position: relative;
-    left: 5%;
-    text-align: left;
-    margin-right: 5%;
-  }
-
-  .specev ul.ph1 {
-    display: flex;
-    justify-content: center;
-    width: 250px;
-    height: auto;
-    min-width: 200px;
-  }
-}
-
-////////////    ////////////    ////////////    ////////////
-//              //              //              //
-//              //              //              //
-//              //              //              //
-////////////    //              ////////////    ////////////
-//    //                        //              //
-//    //                        //              //
-//    //                        //              //
-////////////    ////////////    ////////////    ////////////
-
-.footer {
-  background-color: #457543;
-  padding: 70px 0;
-  margin-top: 5%;
-  bottom: 0;
-  width: 100%;
-}
-
-.social-links {
-  margin-top: 10%;
-}
-
-.footer-col {
-  width: 25%;
-  padding-left: 5%;
-}
-
-.footer-col h4 {
-  font-size: 18px;
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
-}
 
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
@@ -206,38 +216,44 @@ ul {
   background-color: #2a4b2a;
 }
 
-@media (max-width: 767px) {
-  // .footer {
-  // margin-top: 600px;
-  // }
 
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
+  
+  @media(max-width: 767px) {
+    .footer {
+      margin-top: 70px;
+    }
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+  
   }
-}
-
-@media (max-width: 574px) {
-  .footer-col {
-    width: 100%;
+  
+  @media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+  
   }
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1920px;
-  margin: 0px;
-  justify-content: space-between;
-}
-
-ul {
-  list-style: none;
-}
+  
+  
+  body {
+   
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1920px;
+    margin: 0px;
+    justify-content: space-between;
+  }
+  
+  ul {
+    list-style: none;
+  }
 
 /*product-list*/
 .buttons {
@@ -256,20 +272,20 @@ ul {
   padding-top: 5%;
 }
 /*CSS Grid*/
-.section-grid {
-  display: flex;
-  padding-left: 25px;
-  padding-right: 25px;
+.section-grid{
+   display: flex; 
+   padding-left: 10px;
+   padding-right: 10px;
 }
 .grid-prod {
   flex: 1 1 auto;
   display: flex;
   flex-flow: row wrap;
 }
-.prod-grid {
-  flex: 1 1 35%;
-  margin: 2%;
-  padding: 12px;
+.prod-grid{
+  flex: 1 1 22%;
+  margin:1rem;
+  padding:12px;
   background-color: #daeeda;
   border-radius: 12px;
   // box-shadow: 20px;
@@ -306,20 +322,20 @@ h2 {
   text-align: center;
 }
 
-.btn {
-  background: darkcyan;
-  border: 1px solid darkcyan;
-  border-radius: 4px;
-  color: white;
-  font-size: 22px;
-  width: 200px;
-  height: 40px;
-  position: right;
-  margin: 10px;
-  margin-right: 35%;
-  letter-spacing: 1px;
-  display: inline-block;
-}
+// .btn{
+//   background: darkcyan;
+//   border: 1px solid darkcyan;
+//   border-radius: 4px;
+//   color: white;
+//   font-size: 22px;
+//   width: 200px;
+//   height: 40px;
+//   position: right;
+//   margin: 10px;
+//   margin-right: 35%; 
+//   letter-spacing: 1px;
+//   display: inline-block;
+// }
 
 /*CSS List*/
 .section-list {
@@ -362,9 +378,9 @@ tr td img {
 
   margin: 10%;
 }
-button {
-  float: right;
-}
+// button{
+//   float: right;
+// }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .section-list,
