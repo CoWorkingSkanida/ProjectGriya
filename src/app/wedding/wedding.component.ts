@@ -21,12 +21,12 @@ export class WeddingComponent {
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: '../assets/komputer 2.png',
+      src: '../assets/img/komputer 2.png',
     };
     this.slides[1] = {
-      src: '../assets/komputer 2.png',    };
+      src: '../assets/img/komputer 2.png',    };
     this.slides[2] = {
-      src: '../assets/komputer 2.png',    };
+      src: '../assets/img/komputer 2.png',    };
   }
 
   showText() {
