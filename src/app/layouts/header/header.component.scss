@@ -121,7 +121,7 @@
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 1920px){
     .navbar{
         opacity: 1;
     }
@@ -228,18 +228,20 @@
         transform: rotate(-45deg);
     }
 
+}
+
+@media (max-width: 500px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
     .drop-menu {
         display: none;
         position: relative;
         background-color: #2c512be5;
         min-width: 10px;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    }
-
-}
-
-@media (max-width: 500px){
-    .navbar-container input[type="checkbox"]:checked ~ .logo{
-        display: none;
     }
 }
