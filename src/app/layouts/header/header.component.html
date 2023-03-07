@@ -1,4 +1,4 @@
-<div class="navbar relative z-20 border-b"
+<!-- <div class="navbar relative z-20 border-b"
   style="background-color: rgba(236, 254, 234, 1); padding-bottom: 15px; padding-top: 15px;">
   <div class="navbar-container container px-6 md:px-12 lg:container lg:mx-auto lg:px-6">
     <div class="flex items-center justify-between">
@@ -71,4 +71,64 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+
+    <nav class="navbar fixed-top" style="background-color: rgba(236, 254, 234, 1);">
+      <div class="navbar-container container">
+          <input type="checkbox" name="" id="">
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+              <li><a routerLink="/">Home</a></li>
+              <li><a routerLink="/meeting">Meeting & events</a></li>
+              <li><a routerLink="/wedding">Wedding</a></li>
+              <li><a routerLink="/facilities">Facilities</a></li>
+              <li><a routerLink="/room">Room</a></li>
+              <li>    
+                <a href="">
+                  <div class="border-t py-9 px-4 md:px-12 md:py-16 lg:border-t-0 lg:border-l lg:py-0 lg:pr-0 lg:pl-6">
+
+              </div>
+            </a>        
+                
+            </li>
+          </ul>
+          <h1 class="logo"><img src="../../assets/img/WSH.png" alt="Wisma" class="w-32">
+          </h1>
+      </div>
+  </nav>
+  <!-- 
+    .................../ JS Code for smooth scrolling /...................... -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on("click", function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
+        } // End if
+      });
+    });
+  </script>
