@@ -45,6 +45,7 @@
 .ptext {
   display: flex;
   flex-direction: column;
+  margin-top: 10% ;
 }
 
 .specev ul.ph1 {
@@ -108,6 +109,7 @@
     width: 250px;
     height: auto;
     min-width: 200px;
+    margin-top: 10%;
   }
   .kamarmndi {
     margin-top: 10px;
@@ -208,7 +210,7 @@ ul {
 
 @media (max-width: 767px) {
   .footer {
-    margin-top: 950px;
+    margin-top: 900px;
   }
 
   .footer-col {

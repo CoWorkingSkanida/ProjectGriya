@@ -1,6 +1,5 @@
 .contain {
   min-width: 100%;
-  margin: auto;
   position: relative;
   padding: none;
   margin-top: 6rem;
@@ -9,19 +8,21 @@
 @media screen and (min-width: 320px) {
   .contain {
     min-width: 320px;
-    height: 20rem;
-    margin: auto;
+    height: 100%;
     position: relative;
     padding: none;
     margin-top: 6rem;
   }
 }
+
+
+
 .cont {
   margin-left: 5%;
   margin-right: 5%;
   float: left;
   display: flex;
-  margin-top: 28%;
+  margin-top: 10px;
   align-items: center;
 }
 
@@ -122,10 +123,15 @@
   }
 }
 
+.kon {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer {
   background-color: #457543;
   padding: 70px 0;
-  margin-top: 35%;
+  margin-top: 50px;
   bottom: 0;
   width: 100%;
 }
@@ -135,7 +141,7 @@
 }
 
 .footer-col {
-  width: 25%;
+  width: 35%;
   padding-left: 5%;
 }
 
@@ -186,20 +192,19 @@
   background-color: #2a4b2a;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+
+  .ktl {
+    font-size: small;
+  }
+
   .footer {
-    margin-top: 900px;
+    margin-top: 50px;
   }
 
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 574px) {
-  .footer-col {
-    width: 100%;
   }
 }
 

@@ -1,148 +1,149 @@
 <body>
-  <div class="contain" style="background-color: rgba(236, 254, 234, 1)">
-    <div class="carousel" style="margin-top: 5rem">
-      <c-carousel>
-        <c-carousel-indicators></c-carousel-indicators>
-        <c-carousel-inner>
-          <c-carousel-item *ngFor="let slide of slides">
-            <img
-              [src]="slide.src"
-              alt="{{ slide.title }}"
-              class="d-block w-100 h-100"
-              loading="lazy"
-            />
-          </c-carousel-item>
-        </c-carousel-inner>
-        <c-carousel-control
-          [routerLink]
-          caption="Previous"
-          direction="prev"
-        ></c-carousel-control>
-        <c-carousel-control
-          [routerLink]
-          caption="Next"
-          direction="next"
-        ></c-carousel-control>
-      </c-carousel>
+  <div class="kon">
+    <div class="contain" style="background-color: rgba(236, 254, 234, 1)">
+      <div class="carousel" style="margin-top: 5rem">
+        <c-carousel>
+          <c-carousel-indicators></c-carousel-indicators>
+          <c-carousel-inner>
+            <c-carousel-item *ngFor="let slide of slides">
+              <img
+                [src]="slide.src"
+                alt="{{ slide.title }}"
+                class="d-block w-100 h-100"
+                loading="lazy"
+              />
+            </c-carousel-item>
+          </c-carousel-inner>
+          <c-carousel-control
+            [routerLink]
+            caption="Previous"
+            direction="prev"
+          ></c-carousel-control>
+          <c-carousel-control
+            [routerLink]
+            caption="Next"
+            direction="next"
+          ></c-carousel-control>
+        </c-carousel>
+      </div>
+      <div class="column">
+        <div class="welkam">
+          <ul class="ph1">
+            <img src="../assets/img/Group 42.png" alt="" />
+          </ul>
+        </div>
+        <div class="phv">
+          <ul>
+            <img src="../assets/img/Group 2.png" alt="" />
+          </ul>
+        </div>
+        <p class="ptext">
+          Terletak 20,9 km dari Candi Borobudur, wisma sejahtera hotel menawarkan
+          akomodasi bintang 2 di Magelang dan memiliki teras. Dengan taman, hotel
+          bintang 2 ini memiliki kamar-kamar ber-AC dengan Wi-Fi gratis,
+          masing-masing dengan kamar mandi pribadi. Hotel ini memiliki kamar
+          keluarga. Kamar-kamar di hotel ini dilengkapi dengan TV layar datar.
+          Stasiun Tugu Yogyakarta berjarak 45,1 km dari hotel wisma sejahtera,
+          sedangkan Tugu Yogyakarta berjarak 45,1 km dari properti. Bandara
+          terdekat adalah Bandara Internasional Adisutjipto, 51,5 km dari
+          akomodasi.
+        </p>
+        <div class="">
+          <!-- <a routerLink="/booking" class="btn red block circular">
+            Learn More
+          </a> -->
+          <div class="ptext" style="margin-left: 1, 2px">
+            <div [ngClass]="{ limitTextHeight: isReadmore }">
+              memiliki kamar keluarga. Kamar-kamar di hotel ini dilengkapi dengan
+              TV layar datar. Stasiun Tugu Yogyakarta berjarak 45,1 km dari hotel
+              wisma sejahtera, sedangkan Tugu Yogyakarta berjarak 45,1 km dari
+              properti. Bandara terdekat adalah Bandara Internasional Adisutjipto,
+              51,5 km dari akomodasi.
+            </div>
+          </div>
+          <button
+            type="button"
+            (click)="showText()"
+            class="btn red block circular"
+          >
+            {{ isReadmore ? "Learn More" : "Read Less" }}
+          </button>
+        </div>
+      </div>
+      <div class="center">
+        <img src="../assets/img/Group 3.png" />
+      </div>
+      <!-- <section style="margin-top: 5%;">
+        <img src="../assets/Group 45.png" style="margin: 20px;">
+      </section> -->
+      <div
+        class="mid"
+        style="
+          margin: 40px;
+          margin: 20px;
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: row-reverse;
+          padding-left: 3%;
+        "
+      >
+        <a href="/booking"><img src="../assets/img/Group 45.png" /></a>
+      </div>
+      <div
+        class="mid"
+        style="
+          margin: 40px;
+          margin: 20px;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+          padding-top: 5%;
+          padding-right: 3%;
+        "
+      >
+        <a href="/booking"><img src="../assets/img/Group 46.png" /></a>
+      </div>
+      <section style="padding-top: 5%"></section>
     </div>
-    <div class="column">
-      <div class="welkam">
-        <ul class="ph1">
-          <img src="../assets/img/Group 42.png" alt="" />
-        </ul>
-      </div>
-      <div class="phv">
-        <ul>
-          <img src="../assets/img/Group 2.png" alt="" />
-        </ul>
-      </div>
-      <p class="ptext">
-        Terletak 20,9 km dari Candi Borobudur, wisma sejahtera hotel menawarkan
-        akomodasi bintang 2 di Magelang dan memiliki teras. Dengan taman, hotel
-        bintang 2 ini memiliki kamar-kamar ber-AC dengan Wi-Fi gratis,
-        masing-masing dengan kamar mandi pribadi. Hotel ini memiliki kamar
-        keluarga. Kamar-kamar di hotel ini dilengkapi dengan TV layar datar.
-        Stasiun Tugu Yogyakarta berjarak 45,1 km dari hotel wisma sejahtera,
-        sedangkan Tugu Yogyakarta berjarak 45,1 km dari properti. Bandara
-        terdekat adalah Bandara Internasional Adisutjipto, 51,5 km dari
-        akomodasi.
-      </p>
-      <div class="">
-        <!-- <a routerLink="/booking" class="btn red block circular">
-          Learn More
-        </a> -->
-        <div class="ptext" style="margin-left: 1, 2px">
-          <div [ngClass]="{ limitTextHeight: isReadmore }">
-            memiliki kamar keluarga. Kamar-kamar di hotel ini dilengkapi dengan
-            TV layar datar. Stasiun Tugu Yogyakarta berjarak 45,1 km dari hotel
-            wisma sejahtera, sedangkan Tugu Yogyakarta berjarak 45,1 km dari
-            properti. Bandara terdekat adalah Bandara Internasional Adisutjipto,
-            51,5 km dari akomodasi.
+    <div class="footer">
+      <div class="row">
+        <div class="footer-col">
+          <div class="social-links">
+            <a href="https://wa.me/+628988735324" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
-        <button
-          type="button"
-          (click)="showText()"
-          class="btn red block circular"
-        >
-          {{ isReadmore ? "Learn More" : "Read Less" }}
-        </button>
-      </div>
-    </div>
-    <div class="center">
-      <img src="../assets/img/Group 3.png" />
-    </div>
-    <!-- <section style="margin-top: 5%;">
-      <img src="../assets/Group 45.png" style="margin: 20px;">
-    </section> -->
-    <div
-      class="mid"
-      style="
-        margin: 40px;
-        margin: 20px;
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: row-reverse;
-        padding-left: 3%;
-      "
-    >
-      <a href="/booking"><img src="../assets/img/Group 45.png" /></a>
-    </div>
-    <div
-      class="mid"
-      style="
-        margin: 40px;
-        margin: 20px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-        padding-top: 5%;
-        padding-right: 3%;
-      "
-    >
-      <a href="/booking"><img src="../assets/img/Group 46.png" /></a>
-    </div>
-    <section style="padding-top: 5%"></section>
-  </div>
-
-  <div class="footer">
-    <div class="row">
-      <div class="footer-col">
-        <div class="social-links">
-          <a href="https://wa.me/+628988735324" target="_blank"
-            ><i class="fab fa-whatsapp"></i
-          ></a>
-          <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/_miftachussurur"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="www.youtube.com/"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <ul>
-          <li>
-            <a href="https://goo.gl/maps/CfY3dRzw8DtjmTAf9"
-              >Jl. Serayu II No.44, Kedungsari, Kec. Magelang
-            </a>
-          </li>
-          <li>
-            <a href="https://goo.gl/maps/CfY3dRzw8DtjmTAf9"
-              >Utara, Kota Magelang, Jawa Tengah 59155</a
-            >
-          </li>
-          <div class="karepe" style="margin-top: 25px">
+        <div class="footer-col">
+          <ul>
             <li>
-              <a href="https://wa.me/+628988735324">Phone : (0293) 362185</a>
+              <a class="ktl" href="https://goo.gl/maps/CfY3dRzw8DtjmTAf9"
+                >Jl. Serayu II No.44, Kedungsari, Kec. Magelang
+              </a>
             </li>
             <li>
-              <a href="mailto:wismasejahtera@gmail.com"
-                >Email : wismasejahtera@gmail.com</a
+              <a class="ktl" href="https://goo.gl/maps/CfY3dRzw8DtjmTAf9"
+                >Utara, Kota Magelang, Jawa Tengah 59155</a
               >
             </li>
-          </div>
-        </ul>
+            <div class="karepe" style="margin-top: 25px">
+              <li>
+                <a class="ktl" href="https://wa.me/+628988735324">Phone : (0293) 362185</a>
+              </li>
+              <li>
+                <a class="ktl" href="mailto:wismasejahtera@gmail.com"
+                  >Email : wismasejahtera@gmail.com</a
+                >
+              </li>
+            </div>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
+
+
 </body>

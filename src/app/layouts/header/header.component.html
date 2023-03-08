@@ -82,22 +82,35 @@
               <span class="line line3"></span>
           </div>
           <ul class="menu-items">
-              <li><a routerLink="/">Home</a></li>
-              <li><a routerLink="/meeting">Meeting & events</a></li>
-              <li><a routerLink="/wedding">Wedding</a></li>
-              <li><a routerLink="/facilities">Facilities</a></li>
-              <li><a routerLink="/room">Room</a></li>
-              <li>    
-                <a href="">
-                  <div class="border-t py-9 px-4 md:px-12 md:py-16 lg:border-t-0 lg:border-l lg:py-0 lg:pr-0 lg:pl-6">
-
-              </div>
-            </a>        
-                
-            </li>
+              <li><a class="item" routerLink="/"><span class="sp relative" style="font-family: Poppins;
+                font-weight: 500;
+                color: #2C512B;">HOME</span></a></li>
+                <section>
+                  <li><a class="item" routerLink="/meeting"><span class="sp relative" style="font-family: Poppins;
+                    font-weight: 500;
+                    color: #2C512B;">MEETING & EVENTS</span></a></li>
+                </section>
+        
+              <li><a class="item" routerLink="/wedding"><span class="sp relative" style="font-family: Poppins;
+                font-weight: 500;
+                color: #2C512B;">WEDDING</span></a></li>
+              <li><a class="item" routerLink="/facilities"><span class="sp relative" style="    font-family: Poppins;
+                font-weight: 500;
+                color: #2C512B;">FACILITIES</span> </a></li>
+              <li><a class="item" routerLink="/room"><span class="sp relative" style="font-family: Poppins;
+                font-weight: 500;
+                color: #2C512B;">ROOM</span> </a></li>
+                <div class=" py-6 px-4 md:px-12 md:py-16 lg:py-0 lg:pr-0 lg:pl-6">
+                  <a routerLink="/booking" class="btn red block circular">
+                    BOOKING
+                  </a>
+                </div>
+         
           </ul>
-          <h1 class="logo"><img src="../../assets/img/WSH.png" alt="Wisma" class="w-32">
+          
+          <h1 class="logo"><img src="../../assets/img/WSH.png" alt="" class="w-32">
           </h1>
+          
       </div>
   </nav>
   <!-- 
