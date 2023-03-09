@@ -1,19 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TestComponent } from './test/test.component';
-import {MatIcon, MatIconModule} from '@angular/material/icon';
+import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { CarouselModule } from '@coreui/angular';
 import { RoomComponent } from './room/room.component';
 import { FacilitesComponent } from './facilites/facilites.component';
 import { EventsComponent } from './events/events.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BookingComponent } from './booking/booking.component';
-import { NavbarModule, CollapseModule, GridModule, HeaderModule, NavModule, DropdownModule } from '@coreui/angular';
+import {
+  NavbarModule,
+  CollapseModule,
+  GridModule,
+  HeaderModule,
+  NavModule,
+  DropdownModule,
+} from '@coreui/angular';
 import { HeaderComponent } from './layouts/header/header.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { DefaultComponent } from './default/default.component';
@@ -33,7 +40,7 @@ import { MeetingComponent } from './meeting/meeting.component';
     FooterComponent,
     DefaultComponent,
     WeddingComponent,
-    MeetingComponent
+    MeetingComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,9 +55,9 @@ import { MeetingComponent } from './meeting/meeting.component';
     HeaderModule,
     NavModule,
     DropdownModule,
-    DefaultModule
+    DefaultModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

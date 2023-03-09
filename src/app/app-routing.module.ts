@@ -11,24 +11,28 @@ import { WeddingComponent } from './wedding/wedding.component';
 import { MeetingComponent } from './meeting/meeting.component';
 
 const routes: Routes = [
-  { path: '', component: DefaultComponent, 
-    children: [{
-      path: '',
-      component: TestComponent
-    }, {  path: 'event',
-          component: EventsComponent
-  },  { path: 'room', component: RoomComponent },
+  {
+    path: '',
+    component: DefaultComponent,
+    children: [
+      {
+        path: '',
+        component: TestComponent,
+      },
+      { path: 'event', component: EventsComponent },
+      { path: 'room', component: RoomComponent },
       { path: 'facilities', component: FacilitesComponent },
-  { path: 'events', component: EventsComponent },
-  { path: 'gallery', component: GalleryComponent },
-  { path: 'wedding', component: WeddingComponent },
-  { path: 'booking', component: BookingComponent },
-  { path: 'meeting', component: MeetingComponent },
-]},
+      { path: 'events', component: EventsComponent },
+      { path: 'gallery', component: GalleryComponent },
+      { path: 'wedding', component: WeddingComponent },
+      { path: 'booking', component: BookingComponent },
+      { path: 'meeting', component: MeetingComponent },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -73,75 +73,112 @@
   </div>
 </div> -->
 
-    <nav class="navbar fixed-top" style="background-color: rgba(236, 254, 234, 1);">
-      <div class="navbar-container container">
-          <input type="checkbox" name="" id="">
-          <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-          </div>
-          <ul class="menu-items">
-              <li><a class="item" routerLink="/"><span class="sp relative" style="font-family: Poppins;
-                font-weight: 500;
-                color: #2C512B;">HOME</span></a></li>
-                <section>
-                  <li><a class="item" routerLink="/meeting"><span class="sp relative" style="font-family: Poppins;
+<nav class="navbar fixed-top" style="background-color: rgba(236, 254, 234, 1)">
+  <div class="navbar-container container">
+    <input type="checkbox" name="" id="" />
+    <div class="hamburger-lines">
+      <span class="line line1"></span>
+      <span class="line line2"></span>
+      <span class="line line3"></span>
+    </div>
+    <ul class="menu-items">
+      <li class="item">
+        <a routerLink="/"
+          ><span
+            class="sp relative"
+            style="font-family: Poppins; font-weight: 500; color: #2c512b"
+            >HOME</span
+          ></a
+        >
+      </li>
+      <section>
+        <!-- <li class="item"><a  routerLink="/meeting"><span class="sp relative" style="font-family: Poppins;
                     font-weight: 500;
-                    color: #2C512B;">MEETING & EVENTS</span></a></li>
-                </section>
-        
-              <li><a class="item" routerLink="/wedding"><span class="sp relative" style="font-family: Poppins;
-                font-weight: 500;
-                color: #2C512B;">WEDDING</span></a></li>
-              <li><a class="item" routerLink="/facilities"><span class="sp relative" style="    font-family: Poppins;
-                font-weight: 500;
-                color: #2C512B;">FACILITIES</span> </a></li>
-              <li><a class="item" routerLink="/room"><span class="sp relative" style="font-family: Poppins;
-                font-weight: 500;
-                color: #2C512B;">ROOM</span> </a></li>
-                <div class=" py-6 px-4 md:px-12 md:py-16 lg:py-0 lg:pr-0 lg:pl-6">
-                  <a routerLink="/booking" class="btn red block circular">
-                    BOOKING
-                  </a>
-                </div>
-         
-          </ul>
-          
-          <h1 class="logo"><img src="../../assets/img/WSH.png" alt="" class="w-32">
-          </h1>
-          
+                    color: #2C512B;">MEETING & EVENTS</span></a></li> -->
+        <li class="dd item">
+          <a id="room" class="group relative">
+            <span class="sp relative"
+              >MEETING & EVENTS <i class="fa-solid fa-caret-down"></i
+            ></span>
+            <ul class="drop-men">
+              <li class="drop-menu">
+                <a [routerLink]="['/meeting']">MEETING ROOM</a>
+              </li>
+              <hr />
+              <li class="drop-menu">
+                <a [routerLink]="['/events']">EVENTS</a>
+              </li>
+            </ul>
+          </a>
+        </li>
+      </section>
+
+      <li class="item">
+        <a routerLink="/wedding"
+          ><span
+            class="sp relative"
+            style="font-family: Poppins; font-weight: 500; color: #2c512b"
+            >WEDDING</span
+          ></a
+        >
+      </li>
+      <li class="item">
+        <a routerLink="/facilities"
+          ><span
+            class="sp relative"
+            style="font-family: Poppins; font-weight: 500; color: #2c512b"
+            >FACILITIES</span
+          >
+        </a>
+      </li>
+      <li class="item">
+        <a routerLink="/room"
+          ><span
+            class="sp relative"
+            style="font-family: Poppins; font-weight: 500; color: #2c512b"
+            >ROOM</span
+          >
+        </a>
+      </li>
+      <div class="py-6 px-4 md:px-12 md:py-16 lg:py-0 lg:pr-0 lg:pl-6">
+        <a routerLink="/booking" class="btn red block circular"> BOOKING </a>
       </div>
-  </nav>
-  <!-- 
+    </ul>
+
+    <h1 class="logo">
+      <img src="../../assets/img/WSH.png" alt="" class="w-32" />
+    </h1>
+  </div>
+</nav>
+<!-- 
     .................../ JS Code for smooth scrolling /...................... -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      // Add smooth scrolling to all links
-      $("a").on("click", function (event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script>
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on("click", function (event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
 
-          // Store hash
-          var hash = this.hash;
+        // Store hash
+        var hash = this.hash;
 
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $("html, body").animate(
-            {
-              scrollTop: $(hash).offset().top,
-            },
-            800,
-            function () {
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            }
-          );
-        } // End if
-      });
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top,
+          },
+          800,
+          function () {
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          }
+        );
+      } // End if
     });
-  </script>
+  });
+</script> -->

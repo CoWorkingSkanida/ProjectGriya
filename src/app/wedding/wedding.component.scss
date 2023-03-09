@@ -16,6 +16,7 @@
   padding-bottom: 370px;
 }
 
+
 h1 {
   text-align: center;
   color: #ffffff;
@@ -363,7 +364,7 @@ tr td img {
   color: white;
   font-size: 22px;
   width: 200px;
-  height: 40px;
+  height: 50px;
   position: right;
   margin: 10px;
   margin-top: 10%;
@@ -387,4 +388,42 @@ tr td img {
   .buttons {
     display: none;
   }
+}
+
+.btn {
+  border-radius: 3px;
+  color: #fbdedb;
+  background-color: #fbdedb;
+  display: inline-block;
+  background: #2c512b;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-family: Poppins;
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #1f381e;
+}
+
+.btn:active {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.btn.circular {
+  border-radius: 5px !important;
 }

@@ -6,11 +6,24 @@
           <c-carousel-indicators></c-carousel-indicators>
           <c-carousel-inner>
             <c-carousel-item *ngFor="let slide of slides">
-              <img [src]="slide.src" alt="{{ slide.title }}" class="d-block w-100 h-100" loading="lazy" />
+              <img
+                [src]="slide.src"
+                alt="{{ slide.title }}"
+                class="d-block w-100 h-100"
+                loading="lazy"
+              />
             </c-carousel-item>
           </c-carousel-inner>
-          <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
-          <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+          <c-carousel-control
+            [routerLink]
+            caption="Previous"
+            direction="prev"
+          ></c-carousel-control>
+          <c-carousel-control
+            [routerLink]
+            caption="Next"
+            direction="next"
+          ></c-carousel-control>
         </c-carousel>
       </div>
       <div class="column">
@@ -25,15 +38,15 @@
           </ul>
         </div>
         <p class="ptext">
-          Terletak 20,9 km dari Candi Borobudur, wisma sejahtera hotel menawarkan
-          akomodasi bintang 2 di Magelang dan memiliki teras. Dengan taman, hotel
-          bintang 2 ini memiliki kamar-kamar ber-AC dengan Wi-Fi gratis,
-          masing-masing dengan kamar mandi pribadi. Hotel ini memiliki kamar
-          keluarga. Kamar-kamar di hotel ini dilengkapi dengan TV layar datar.
-          Stasiun Tugu Yogyakarta berjarak 45,1 km dari hotel wisma sejahtera,
-          sedangkan Tugu Yogyakarta berjarak 45,1 km dari properti. Bandara
-          terdekat adalah Bandara Internasional Adisutjipto, 51,5 km dari
-          akomodasi.
+          Terletak 20,9 km dari Candi Borobudur, wisma sejahtera hotel
+          menawarkan akomodasi bintang 2 di Magelang dan memiliki teras. Dengan
+          taman, hotel bintang 2 ini memiliki kamar-kamar ber-AC dengan Wi-Fi
+          gratis, masing-masing dengan kamar mandi pribadi. Hotel ini memiliki
+          kamar keluarga. Kamar-kamar di hotel ini dilengkapi dengan TV layar
+          datar. Stasiun Tugu Yogyakarta berjarak 45,1 km dari hotel wisma
+          sejahtera, sedangkan Tugu Yogyakarta berjarak 45,1 km dari properti.
+          Bandara terdekat adalah Bandara Internasional Adisutjipto, 51,5 km
+          dari akomodasi.
         </p>
         <div class="">
           <!-- <a routerLink="/booking" class="btn red block circular">
@@ -41,14 +54,19 @@
           </a> -->
           <div class="ptext1" style="margin-left: 1, 2px">
             <div [ngClass]="{ limitTextHeight: isReadmore }">
-              memiliki kamar keluarga. Kamar-kamar di hotel ini dilengkapi dengan
-              TV layar datar. Stasiun Tugu Yogyakarta berjarak 45,1 km dari hotel
-              wisma sejahtera, sedangkan Tugu Yogyakarta berjarak 45,1 km dari
-              properti. Bandara terdekat adalah Bandara Internasional Adisutjipto,
-              51,5 km dari akomodasi.
+              memiliki kamar keluarga. Kamar-kamar di hotel ini dilengkapi
+              dengan TV layar datar. Stasiun Tugu Yogyakarta berjarak 45,1 km
+              dari hotel wisma sejahtera, sedangkan Tugu Yogyakarta berjarak
+              45,1 km dari properti. Bandara terdekat adalah Bandara
+              Internasional Adisutjipto, 51,5 km dari akomodasi.
             </div>
           </div>
-          <button type="button" (click)="showText()" class="rrm btn red block circular">
+          <button
+            type="button"
+            id="foo"
+            (click)="showText()"
+            class="rrm btn red block circular"
+          >
             {{ isReadmore ? "Learn More" : "Read Less" }}
           </button>
         </div>
@@ -56,31 +74,41 @@
       <div class="center">
         <img src="../assets/img/Group 3.png" />
       </div>
-      <div class="mid" >
+      <div class="mid">
         <div class="tek">
           <p class="tx"><b>Special Wedding</b></p>
-          <p class="tx1" style="font-size: 18px;color: rgba(0, 0, 0, 0.62);">Just Rp 15.000.000,00</p>
-          <button type="button" (click)="learnBuy()" class="btn red block circular">
+          <p class="tx1" style="font-size: 18px; color: rgba(0, 0, 0, 0.62)">
+            Just Rp 15.000.000,00
+          </p>
+          <button
+            type="button"
+            (click)="learnBuy()"
+            class="btn red block circular"
+          >
             {{ isReadmore ? "Learn More" : "Read Less" }}
           </button>
         </div>
         <div class="im">
           <a href="/booking"><img src="../assets/img/komputer 1.png" /></a>
         </div>
-        
       </div>
-      <div class="mid1" >
+      <div class="mid1">
         <div class="tek1">
           <p class="tx"><b>Special Wedding</b></p>
-          <p class="tx1" style="font-size: 18px;color: rgba(0, 0, 0, 0.62);">Just Rp 15.000.000,00</p>
-          <button type="button" (click)="learnBuy()" class="btn red block circular">
+          <p class="tx1" style="font-size: 18px; color: rgba(0, 0, 0, 0.62)">
+            Just Rp 15.000.000,00
+          </p>
+          <button
+            type="button"
+            (click)="learnBuy()"
+            class="btn red block circular"
+          >
             {{ isReadmore ? "Learn More" : "Read Less" }}
           </button>
         </div>
         <div class="im">
           <a href="/booking"><img src="../assets/img/komputer 1.png" /></a>
         </div>
-        
       </div>
 
       <section style="padding-top: 5%"></section>
@@ -89,7 +117,9 @@
       <div class="row">
         <div class="footer-col">
           <div class="social-links">
-            <a href="https://wa.me/+628988735324" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://wa.me/+628988735324" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
@@ -98,18 +128,25 @@
         <div class="footer-col">
           <ul>
             <li>
-              <a class="ktl" href="https://goo.gl/maps/CfY3dRzw8DtjmTAf9">Jl. Serayu II No.44, Kedungsari, Kec. Magelang
+              <a class="ktl" href="https://goo.gl/maps/CfY3dRzw8DtjmTAf9"
+                >Jl. Serayu II No.44, Kedungsari, Kec. Magelang
               </a>
             </li>
             <li>
-              <a class="ktl" href="https://goo.gl/maps/CfY3dRzw8DtjmTAf9">Utara, Kota Magelang, Jawa Tengah 59155</a>
+              <a class="ktl" href="https://goo.gl/maps/CfY3dRzw8DtjmTAf9"
+                >Utara, Kota Magelang, Jawa Tengah 59155</a
+              >
             </li>
             <div class="karepe" style="margin-top: 25px">
               <li>
-                <a class="ktl" href="https://wa.me/+628988735324">Phone : (0293) 362185</a>
+                <a class="ktl" href="https://wa.me/+628988735324"
+                  >Phone : (0293) 362185</a
+                >
               </li>
               <li>
-                <a class="ktl" href="mailto:wismasejahtera@gmail.com">Email : wismasejahtera @gmail.com</a>
+                <a class="ktl" href="mailto:wismasejahtera@gmail.com"
+                  >Email : wismasejahtera @gmail.com</a
+                >
               </li>
             </div>
           </ul>
@@ -117,6 +154,15 @@
       </div>
     </div>
   </div>
-
-
 </body>
+<script>
+  const f = document.getElementById("foo");
+  document.addEventListener(
+    "click",
+    (ev) => {
+      f.style.transform = `translateY(${ev.clientY - 25}px)`;
+      f.style.transform += `translateX(${ev.clientX - 25}px)`;
+    },
+    false
+  );
+</script>
