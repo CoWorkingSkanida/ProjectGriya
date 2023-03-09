@@ -12,13 +12,13 @@ export class MeetingComponent implements OnInit{
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: '../assets/img/coba.svg', 
+      src: '../assets/img/DSCF5829.JPG', 
     };
     this.slides[1] = {
-      src: '../assets/img/coba.svg',
+      src: '../assets/img/DSCF5777 (1).JPG',
     }
     this.slides[2] = {
-      src: '../assets/img/coba.svg',
+      src: '../assets/img/DSCF6133.JPG',
     }
   }
 } 
