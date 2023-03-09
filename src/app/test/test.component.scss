@@ -230,6 +230,7 @@ hr {
   box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
   position: relative;
   margin-top: 9px;
+  margin-left: 40px;
 }
 
 .btn:hover,
@@ -247,6 +248,12 @@ hr {
 
 .btn.circular {
   border-radius: 5px !important;
+}
+
+@media (max-width: 768px) {
+  .btn{
+    margin-left: 20px;
+  }
 }
 
 .limitTextHeight {
