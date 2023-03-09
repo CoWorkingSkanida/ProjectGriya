@@ -116,8 +116,11 @@ ul {
   .ptext {
     position: relative;
     left: 5%;
-    text-align: left;
+    text-align: justify;
     margin-right: 5%;
+    font-family: "Montserrat";
+    font-style: normal;
+
   }
   .jtext {
     font-weight: bold;
@@ -125,6 +128,9 @@ ul {
     left: 5%;
     text-align: left;
     margin-right: 5%;
+    margin-bottom: 6%;
+    letter-spacing: 1.5px;
+    font-size: 18px;
   }
 
   .specev ul.ph1 {
@@ -231,7 +237,7 @@ ul {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .row {

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .btn {
   padding: 0.85em 2.1em 0.85em;
   border-radius: 3px;
@@ -11,7 +11,7 @@
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  font-family: Poppins;
+  font-family: Montserrat;
   font-weight: 500;
   font-size: 1em;
   text-transform: uppercase;
@@ -41,7 +41,7 @@
 }
 
 .sp {
-  font-family: Poppins;
+  font-family: Montserrat;
   font-weight: 500;
   color: #2c512b;
 }
@@ -77,7 +77,7 @@
 // }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ///////////..utility classes../////////// */
@@ -323,7 +323,7 @@ body {
 
 .drop-menu a {
   color: #fff;
-  font-family: Poppins;
+  font-family: Montserrat;
   font-weight: 500;
 }
 
@@ -332,7 +332,7 @@ body {
   width: 75%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .navbar .menu-items {
     max-width: 300px;
     transform: translate(-150%);
@@ -345,7 +345,7 @@ body {
   }
 
   .item {
-    margin-bottom: 1.9rem;
+    // margin-bottom: 1.9rem;
     font-size: 1.1rem;
     font-weight: 500;
   }
@@ -353,4 +353,10 @@ body {
   .navbar .drop-men {
     position: relative;
   }
+}
+@media (max-width: 768px) {
+ .btn {
+
+  margin-top: 30%;
+ }
 }

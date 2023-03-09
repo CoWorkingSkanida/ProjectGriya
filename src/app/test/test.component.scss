@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 5%;
-  font-family: "Poppins";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 29px;
@@ -31,7 +31,7 @@
   align-items: flex-end;
   justify-content: center;
   padding-right: 5%;
-  font-family: "Poppins";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 29px;
@@ -136,7 +136,7 @@ hr {
   margin-top: 50px;
   margin-left: 40px;
   margin-right: 40%;
-  font-family: "Poppins";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -146,7 +146,7 @@ hr {
 .ptext1 {
   margin-left: 40px;
   margin-right: 40%;
-  font-family: "Poppins";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -179,23 +179,25 @@ hr {
 
   .ptext {
     margin-top: none;
+    text-align: justify;
     margin-left: 20px;
     margin-right: 20px;
-    font-family: "Poppins";
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 28px;
     color: #2c512b;
   }
   .ptext1 {
+    text-align: justify;
     margin-top: none;
     margin-left: 20px;
     margin-right: 20px;
-    font-family: "Poppins";
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 28px;
     color: #2c512b;
   }
@@ -219,7 +221,7 @@ hr {
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  font-family: Poppins;
+  font-family: Montserrat;
   width: 190px;
   height: 50;
   text-transform: uppercase;
