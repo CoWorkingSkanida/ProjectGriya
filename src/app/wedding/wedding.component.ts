@@ -16,8 +16,17 @@ export class WeddingComponent {
 
   isReadmore = true;
   isLearnbuy = true;
-  isMobile = false;
-  isDesktop = false;
+  
+
+  phoneNumber = '+628988735324';
+  message1 = 'Hello, 1!';
+  message2 = 'Hello, 2!';
+  message3 = 'Hello, 3!';
+  message4 = 'Hello, 4!';
+  message5 = 'Hello, 5!';
+  message6 = 'Hello, 6!';
+  message7 = 'Hello, 7!';
+  message8 = 'Hello, 8!';
 
   show = false;
   show1 = false;
@@ -30,11 +39,7 @@ export class WeddingComponent {
   show8 = false;
 
   constructor(private router: Router) {
-    if (window.matchMedia('(max-width: 767px)').matches) {
-      this.isMobile = true;
-    } else {
-      this.isDesktop = true;
-    }
+   
   }
 
   ngOnInit(): void {
@@ -79,5 +84,85 @@ export class WeddingComponent {
 
   learnBuy() {
     this.router.navigateByUrl('/booking');
+  }
+  learnBuy1() {
+    // this.router.navigateByUrl('/https://api.whatsapp.com/send?phone=+628988735324&text=apakah%20masih%20ada%20kamar?');
+    
+    
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${this.phoneNumber}&text=${encodeURIComponent(this.message1)}`;
+
+    console.log(whatsappLink)
+
+  window.location.href = whatsappLink;
+  }
+  learnBuy2() {
+    // this.router.navigateByUrl('/https://api.whatsapp.com/send?phone=+628988735324&text=apakah%20masih%20ada%20kamar?');
+    
+    
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${this.phoneNumber}&text=${encodeURIComponent(this.message2)}`;
+
+    console.log(whatsappLink)
+
+  window.location.href = whatsappLink;
+  }
+  learnBuy3() {
+    // this.router.navigateByUrl('/https://api.whatsapp.com/send?phone=+628988735324&text=apakah%20masih%20ada%20kamar?');
+    
+    
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${this.phoneNumber}&text=${encodeURIComponent(this.message3)}`;
+
+    console.log(whatsappLink)
+
+  window.location.href = whatsappLink;
+  }
+  learnBuy4() {
+    // this.router.navigateByUrl('/https://api.whatsapp.com/send?phone=+628988735324&text=apakah%20masih%20ada%20kamar?');
+    
+    
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${this.phoneNumber}&text=${encodeURIComponent(this.message4)}`;
+
+    console.log(whatsappLink)
+
+  window.location.href = whatsappLink;
+  }
+  learnBuy5() {
+    // this.router.navigateByUrl('/https://api.whatsapp.com/send?phone=+628988735324&text=apakah%20masih%20ada%20kamar?');
+    
+    
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${this.phoneNumber}&text=${encodeURIComponent(this.message5)}`;
+
+    console.log(whatsappLink)
+
+  window.location.href = whatsappLink;
+  }
+  learnBuy6() {
+    // this.router.navigateByUrl('/https://api.whatsapp.com/send?phone=+628988735324&text=apakah%20masih%20ada%20kamar?');
+    
+    
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${this.phoneNumber}&text=${encodeURIComponent(this.message6)}`;
+
+    console.log(whatsappLink)
+
+  window.location.href = whatsappLink;
+  }
+  learnBuy7() {
+    // this.router.navigateByUrl('/https://api.whatsapp.com/send?phone=+628988735324&text=apakah%20masih%20ada%20kamar?');
+    
+    
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${this.phoneNumber}&text=${encodeURIComponent(this.message7)}`;
+
+    console.log(whatsappLink)
+
+  window.location.href = whatsappLink;
+  }
+  learnBuy8() {
+    // this.router.navigateByUrl('/https://api.whatsapp.com/send?phone=+628988735324&text=apakah%20masih%20ada%20kamar?');
+    
+    
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${this.phoneNumber}&text=${encodeURIComponent(this.message8)}`;
+
+    console.log(whatsappLink)
+
+  window.location.href = whatsappLink;
   }
 }
