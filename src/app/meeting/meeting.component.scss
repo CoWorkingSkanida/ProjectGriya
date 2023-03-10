@@ -38,6 +38,29 @@ h1 {
   justify-content: space-between;
 }
 
+.btn {
+  border-radius: 3px;
+  color: #fbdedb;
+  background-color: #fbdedb;
+  display: inline-block;
+  background: #2c512b;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-family: Montserrat;
+  width: 190px;
+  height: 50;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  position: relative;
+  margin-top: 9px;
+}
+
 ul {
   list-style: none;
 }
@@ -364,6 +387,10 @@ ul {
     width: 50%;
     margin-bottom: 30px;
   }
+
+  .btn {
+    width: 100%;
+  }
 }
 
 @media (max-width: 574px) {
@@ -457,6 +484,7 @@ h2 {
     font-size: 20px;
     padding: 1rem;
   }
+
 }
 
 .bbi {
@@ -467,20 +495,7 @@ h2 {
   text-align: justify;
 }
 
-.btn {
-  background: darkcyan;
-  border: 1px solid darkcyan;
-  border-radius: 4px;
-  color: white;
-  font-size: 22px;
-  width: 200px;
-  height: 40px;
-  position: right;
-  margin: 10px;
-  margin-right: 35%;
-  letter-spacing: 1px;
-  display: inline-block;
-}
+
 
 /*CSS List*/
 .section-list {

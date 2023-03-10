@@ -232,6 +232,9 @@ hr {
   box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
   position: relative;
   margin-top: 9px;
+}
+
+.hohoho {
   margin-left: 40px;
 }
 
@@ -254,6 +257,9 @@ hr {
 
 @media (max-width: 768px) {
   .btn{
+    margin-left: 0px;
+  }
+  .hohoho {
     margin-left: 20px;
   }
 }
