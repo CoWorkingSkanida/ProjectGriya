@@ -21,13 +21,16 @@ export class TestComponent implements OnInit {
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: '../assets/img/afternoon-tea.jpg',
+      src: '../assets/img/1.png',
     };
     this.slides[1] = {
-      src: '../assets/img/photo-1627677063748-0de05b0be717.jpg',
+      src: '../assets/img/m2.png',
     };
     this.slides[2] = {
-      src: '../assets/img/photo-1627677063748-0de05b0be717.jpg',
+      src: '../assets/img/5.png',
+    };
+    this.slides[3] = {
+      src: '../assets/img/9.png',
     };
   }
 

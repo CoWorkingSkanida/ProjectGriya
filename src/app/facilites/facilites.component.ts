@@ -17,13 +17,19 @@ export class FacilitesComponent implements OnInit {
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: '../assets/img/pexels-christian-heitz-842711 1 (1).png',
+      src: '../assets/img/9.png',
     };
     this.slides[1] = {
-      src: '../assets/img/pexels-christian-heitz-842711 1 (1).png',
+      src: '../assets/img/11.png',
     };
     this.slides[2] = {
-      src: '../assets/img/pexels-christian-heitz-842711 1 (1).png',
+      src: '../assets/img/f1.png',
+    };
+    this.slides[3] = {
+      src: '../assets/img/f2.png',
+    };
+    this.slides[4] = {
+      src: '../assets/img/f3.png',
     };
   }
 }

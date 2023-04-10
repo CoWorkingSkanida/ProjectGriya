@@ -17,13 +17,13 @@ export class RoomComponent {
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: '../assets/img/pexels-christian-heitz-842711 1 (1).png',
+      src: '../assets/img/k1.png',
     };
     this.slides[1] = {
-      src: '../assets/img/pexels-christian-heitz-842711 1 (1).png',
+      src: '../assets/img/k2.png',
     };
     this.slides[2] = {
-      src: '../assets/img/pexels-christian-heitz-842711 1 (1).png',
+      src: '../assets/img/k3.png',
     };
   }
 }

@@ -24,13 +24,25 @@ export class MeetingComponent implements OnInit{
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: '../assets/img/DSCF5829.JPG', 
+      src: '../assets/img/1.png', 
     };
     this.slides[1] = {
-      src: '../assets/img/DSCF5777 (1).JPG',
+      src: '../assets/img/2.png',
     }
     this.slides[2] = {
-      src: '../assets/img/DSCF6133.JPG',
+      src: '../assets/img/3.png',
+    }
+    this.slides[3] = {
+      src: '../assets/img/4.png',
+    }
+    this.slides[4] = {
+      src: '../assets/img/m1.png',
+    }
+    this.slides[5] = {
+      src: '../assets/img/m2.png',
+    }
+    this.slides[6] = {
+      src: '../assets/img/m3.png',
     }
   }
 
