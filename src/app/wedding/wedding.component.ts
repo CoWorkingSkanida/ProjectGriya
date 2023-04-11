@@ -44,16 +44,16 @@ export class WeddingComponent {
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: '../assets/img/w3.jpeg',
+      src: '../assets/img/w3.png',
     };
     this.slides[1] = {
-      src: '../assets/img/w4.jpeg',
+      src: '../assets/img/w4.png',
     };
     this.slides[2] = {
-      src: '../assets/img/w2.jpeg',
+      src: '../assets/img/w2.png',
     };
     this.slides[3] = {
-      src: '../assets/img/w1.jpeg',
+      src: '../assets/img/w1.png',
     };
   }
 
