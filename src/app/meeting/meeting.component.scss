@@ -398,9 +398,8 @@ ul {
     width: 100%;
   }
 
-  .bbi {
-    text-align: justify;
-  }
+
+
 }
 
 // product list style
@@ -546,5 +545,20 @@ button {
   .section-list,
   .buttons {
     display: none;
+  }
+  .bbi {
+    text-align: justify;
+    font-family: Montserrat;
+    // font-size: 18px;
+   
+  }
+  .prod-grid {
+   flex: auto;
+    margin: 2%;
+    padding: 12px;
+    background-color: #daeeda;
+    border-radius: 12px;
+    // box-shadow: 20px;
+    // border: 2px solid #457543;
   }
 }
