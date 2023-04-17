@@ -12,16 +12,13 @@ export class EventsComponent {
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: '../assets/img/1.png',
+      src: '../assets/img/m3.png',
     };
     this.slides[1] = {
-      src:  '../assets/img/m2.png',
+      src:  '../assets/img/events (2).JPG',
     }
     this.slides[2] = {
-      src:  '../assets/img/m3.png',
-    }
-    this.slides[3] = {
-      src:  '../assets/img/5.png',
+      src:  '../assets/img/events (3).JPG',
     }
   }
 } 
