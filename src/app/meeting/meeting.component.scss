@@ -541,6 +541,17 @@ button {
   float: right;
 }
 
+.cms{
+  text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-family: Montserrat;
+  //   font-size: 20px;
+    padding: 10px;
+    margin-top: 10%;
+  color: #000;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .section-list,
   .buttons {
