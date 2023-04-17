@@ -120,12 +120,12 @@
               {{ isReadmore ? "Pilih Paket" : "Read Less" }}
             </button>
             <ul class="kentir" cDropdownMenu style="background-color: antiquewhite; margin-top: 10px; ">
-              <li><a (click)="learnBuy2()" cDropdownItem>Quarter Day Meeting</a></li>
-              <li><a [routerLink]="[]" cDropdownItem>Half Day Meeting</a></li>
-              <li><a [routerLink]="[]" cDropdownItem>One Day Meeting</a></li>
-              <li><a [routerLink]="[]" cDropdownItem>Full Day Meeting</a></li>
-              <li><a [routerLink]="[]" cDropdownItem>Fullboard package A</a></li>
-              <li><a [routerLink]="[]" cDropdownItem>Fullboard package B</a></li>
+              <li><a (click)="learnBuy1()" cDropdownItem>Quarter Day Meeting</a></li>
+              <li><a (click)="learnBuy2()" cDropdownItem>Half Day Meeting</a></li>
+              <li><a (click)="learnBuy3()" cDropdownItem>One Day Meeting</a></li>
+              <li><a (click)="learnBuy4()" cDropdownItem>Full Day Meeting</a></li>
+              <li><a (click)="learnBuy5()" cDropdownItem>Fullboard package A</a></li>
+              <li><a  (click)="learnBuy6()" cDropdownItem>Fullboard package B</a></li>
             </ul>
           </c-dropdown>
         </div>
@@ -185,7 +185,7 @@
             {{ isReadmore ? "Pilih Paket" : "Read Less" }}
           </button>
           <ul class="kentir" cDropdownMenu style="background-color: antiquewhite; margin-top: 10px; ">
-            <li><a (click)="learnBuy2()" cDropdownItem>Quarter Day Meeting</a></li>
+            <li><a (click)="learnBuy2()" cDropdownItem >Quarter Day Meeting</a></li>
             <li><a [routerLink]="[]" cDropdownItem>Half Day Meeting</a></li>
             <li><a [routerLink]="[]" cDropdownItem>One Day Meeting</a></li>
             <li><a [routerLink]="[]" cDropdownItem>Full Day Meeting</a></li>
