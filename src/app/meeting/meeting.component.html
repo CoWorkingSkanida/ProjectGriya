@@ -115,13 +115,19 @@
              <li style="padding-top: 4px;">Tampungan : 50 - 100 orang</li>
           </ul>
           <br />
-          <button
-          type="button"
-          (click)="learnBuy()"
-          class="btn red block circular"
-        >
-          {{ isReadmore ? "Buy Now" : "Read Less" }}
-        </button>
+          <c-dropdown>
+            <button class="btn btn-secondary" cButton cDropdownToggle >
+              {{ isReadmore ? "Pilih Paket" : "Read Less" }}
+            </button>
+            <ul class="kentir" cDropdownMenu style="background-color: antiquewhite; margin-top: 10px; ">
+              <li><a (click)="learnBuy2()" cDropdownItem>Quarter Day Meeting</a></li>
+              <li><a [routerLink]="[]" cDropdownItem>Half Day Meeting</a></li>
+              <li><a [routerLink]="[]" cDropdownItem>One Day Meeting</a></li>
+              <li><a [routerLink]="[]" cDropdownItem>Full Day Meeting</a></li>
+              <li><a [routerLink]="[]" cDropdownItem>Fullboard package A</a></li>
+              <li><a [routerLink]="[]" cDropdownItem>Fullboard package B</a></li>
+            </ul>
+          </c-dropdown>
         </div>
         <div class="prod-grid">
           <img src="../assets/img/m2.png" alt="kalita" />
@@ -138,13 +144,19 @@
              <li style="padding-top: 4px;">Tampungan : 50 - 500 orang</li>
           </ul>
           <br />
-          <button
-          type="button"
-          (click)="learnBuy1()"
-          class="btn red block circular"
-        >
-          {{ isReadmore ? "Buy Now" : "Read Less" }}
-        </button>
+          <c-dropdown>
+            <button class="btn btn-secondary" cButton cDropdownToggle >
+              {{ isReadmore ? "Pilih Paket" : "Read Less" }}
+            </button>
+            <ul class="kentir" cDropdownMenu style="background-color: antiquewhite; margin-top: 10px; ">
+              <li><a (click)="learnBuy2()" cDropdownItem>Quarter Day Meeting</a></li>
+              <li><a [routerLink]="[]" cDropdownItem>Half Day Meeting</a></li>
+              <li><a [routerLink]="[]" cDropdownItem>One Day Meeting</a></li>
+              <li><a [routerLink]="[]" cDropdownItem>Full Day Meeting</a></li>
+              <li><a [routerLink]="[]" cDropdownItem>Fullboard package A</a></li>
+              <li><a [routerLink]="[]" cDropdownItem>Fullboard package B</a></li>
+            </ul>
+          </c-dropdown>
         </div>
         <div class="prod-grid">
           <img src="../assets/img/1.png" alt="kalita" />
@@ -161,13 +173,26 @@
              <li style="padding-top: 4px;">Tampungan : 10 - 50 orang</li>
           </ul>
           <br />
-          <button
+          <!-- <button
           type="button"
           (click)="learnBuy2()"
           class="btn red block circular"
         >
           {{ isReadmore ? "Buy Now" : "Read Less" }}
-        </button>
+        </button> -->
+        <c-dropdown>
+          <button class="btn btn-secondary" cButton cDropdownToggle >
+            {{ isReadmore ? "Pilih Paket" : "Read Less" }}
+          </button>
+          <ul class="kentir" cDropdownMenu style="background-color: antiquewhite; margin-top: 10px; ">
+            <li><a (click)="learnBuy2()" cDropdownItem>Quarter Day Meeting</a></li>
+            <li><a [routerLink]="[]" cDropdownItem>Half Day Meeting</a></li>
+            <li><a [routerLink]="[]" cDropdownItem>One Day Meeting</a></li>
+            <li><a [routerLink]="[]" cDropdownItem>Full Day Meeting</a></li>
+            <li><a [routerLink]="[]" cDropdownItem>Fullboard package A</a></li>
+            <li><a [routerLink]="[]" cDropdownItem>Fullboard package B</a></li>
+          </ul>
+        </c-dropdown>
         </div>
         <div class="prod-grid">
           <h1 class="cms"><b>Coming Soon</b></h1>

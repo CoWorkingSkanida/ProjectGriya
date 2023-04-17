@@ -10,13 +10,13 @@ export class MeetingComponent implements OnInit{
 
   isLearnbuy = true;
   isReadmore = true;
-  message = 'Hello, World!';
+  message = 'Saya ingin memesan ruang meeting Aula Filadelphia. Saya sudah cek di website Anda dan harganya Rp. 2.500.000 per malam.';
   message1 = 'Hello, dontol!';
   message2 = 'Hello, twols!';
   message3 = 'Hello, perdontolan!';
 
   slides: any[] = new Array(3).fill({id: -1, src: '', title: '', subtitle: ''});
-  phoneNumber = '+628988735324';
+  phoneNumber = '+6281325852102';
 
   constructor(
     private router: Router

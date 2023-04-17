@@ -551,7 +551,9 @@ button {
     margin-top: 10%;
   color: #000;
 }
-
+.kentir {
+  width: 37%;
+  }
 @media (min-width: 320px) and (max-width: 480px) {
   .section-list,
   .buttons {
@@ -572,4 +574,10 @@ button {
     // box-shadow: 20px;
     // border: 2px solid #457543;
   }
+
+  .kentir {
+  width: 100%;
+  }
 }
+
+
