@@ -38,7 +38,7 @@
         <h3><b style="text-align: left">Meeting Information</b></h3>
         <p>
           Hotel Wisma Sejahtera menyediakan 14 Ruang Pertemuan yang tersedia
-          untuk fungsi serbaguna dan dapat menampung dari 6 hingga 1500 orang.
+          untuk fungsi serbaguna dan dapat menampung dari 10 hingga 500 orang.
           Fasilitas pertemuan kami dilengkapi dengan teknologi audio-visual
           modern, layar proyektor ukuran penuh, dan mikrofon nirkabel plus satu
           set fasilitas pertemuan standar bogor . Atas permintaan, kami juga
@@ -102,91 +102,100 @@
       <div class="grid-prod">
         <div class="prod-grid">
           <img src="../assets/img/m1.png" alt="kalita" />
-          <h2><b>Padjajaran 1</b></h2>
+          <h2><b>Aula Filadelphia</b></h2>
           <ul class="bbi">
-            <li>Lantai      : lantai 4TH</li>
-            <li>Dimensi     : 12,5 x 10,5m2</li>
-            <li>Tinggi      : 3,1 m</li>
-            <li>Teater      : 70 - 100</li>
-            <li>Kelas       : 40 - 70</li>
-            <li>Meja bundar : 30 - 50</li>
-            <li>Bentuk-U    : 20 - 40</li>
-            <li>Penerimaan  : 100 - 150</li>
+             <li>Lantai      : lantai 4TH</li>
+             <li style="padding-top: 4px;">Panggung     : 11,40 meter x 3 meter</li>
+             <li style="padding-top: 4px;">Dimensi     : 14,75 meter x 13 meter</li>
+             <li style="padding-top: 4px;">Tinggi      : 3,1 meter</li>
+             <li style="padding-top: 4px;">Makan Minum      : 1-2 kali</li>
+             <li style="padding-top: 4px;">Fasilitas 1   : Meja Kursi</li>
+             <li style="padding-top: 4px;">Fasilitas 2   : Prasmanan</li>
+             <li style="padding-top: 4px;">Fasilitas 3   : Mic & Sound </li>
+             <li style="padding-top: 4px;">Tampungan : 50 - 100 orang</li>
           </ul>
           <br />
-          <button
-          type="button"
-          (click)="learnBuy()"
-          class="btn red block circular"
-        >
-          {{ isReadmore ? "Buy Now" : "Read Less" }}
-        </button>
-        </div>
-        <div class="prod-grid">
-          <img src="../assets/img/4.png" alt="kalita" />
-          <h2><b>Padjajaran 2</b></h2>
-          <ul class="bbi">
-            <li>Lantai : lantai 4TH</li>
-            <li>Dimensi : 12,5 x 10,5m2</li>
-            <li>Tinggi : 3,1 m</li>
-            <li>Teater : 70 - 100</li>
-            <li>Kelas : 40 - 70</li>
-            <li>Meja bundar : 30 - 50</li>
-            <li>Bentuk-U : 20 - 40</li>
-            <li>Penerimaan : 100 - 150</li>
-          </ul>
-          <br />
-          <button
-          type="button"
-          (click)="learnBuy1()"
-          class="btn red block circular"
-        >
-          {{ isReadmore ? "Buy Now" : "Read Less" }}
-        </button>
+          <c-dropdown>
+            <button class="btn btn-secondary" cButton cDropdownToggle >
+              {{ isReadmore ? "Pilih Paket" : "Read Less" }}
+            </button>
+            <ul class="kentir" cDropdownMenu style="background-color: antiquewhite; margin-top: 10px; ">
+              <li><a (click)="learnBuy1()" cDropdownItem>Quarter Day Meeting</a></li>
+              <li><a (click)="learnBuy2()" cDropdownItem>Half Day Meeting</a></li>
+              <li><a (click)="learnBuy3()" cDropdownItem>One Day Meeting</a></li>
+              <li><a (click)="learnBuy4()" cDropdownItem>Full Day Meeting</a></li>
+              <li><a (click)="learnBuy5()" cDropdownItem>Fullboard package A</a></li>
+              <li><a  (click)="learnBuy6()" cDropdownItem>Fullboard package B</a></li>
+            </ul>
+          </c-dropdown>
         </div>
         <div class="prod-grid">
           <img src="../assets/img/m2.png" alt="kalita" />
-          <h2><b>Padjajaran 3</b></h2>
+          <h2><b>Aula Wisma Sejahtera</b></h2>
           <ul class="bbi">
-            <li>Lantai : lantai 4TH</li>
-            <li>Dimensi : 12,5 x 10,5m2</li>
-            <li>Tinggi : 3,1 m</li>
-            <li>Teater : 70 - 100</li>
-            <li>Kelas : 40 - 70</li>
-            <li>Meja bundar : 30 - 50</li>
-            <li>Bentuk-U : 20 - 40</li>
-            <li>Penerimaan : 100 - 150</li>
+            <li>Lantai      : lantai 4TH</li>
+             <li style="padding-top: 4px;">Panggung     : 11,40 meter x 3 meter</li>
+             <li style="padding-top: 4px;">Dimensi     : 26,6 meter x 14,7 meter</li>
+             <li style="padding-top: 4px;">Tinggi      : 3,1 meter</li>
+             <li style="padding-top: 4px;">Makan Minum      : 1-2 kali</li>
+             <li style="padding-top: 4px;">Fasilitas 1   : Meja Kursi</li>
+             <li style="padding-top: 4px;">Fasilitas 2   : Prasmanan</li>
+             <li style="padding-top: 4px;">Fasilitas 3   : Mic & Sound </li>
+             <li style="padding-top: 4px;">Tampungan : 50 - 500 orang</li>
           </ul>
           <br />
-          <button
+          <c-dropdown>
+            <button class="btn btn-secondary" cButton cDropdownToggle >
+              {{ isReadmore ? "Pilih Paket" : "Read Less" }}
+            </button>
+            <ul class="kentir" cDropdownMenu style="background-color: antiquewhite; margin-top: 10px; ">
+              <li><a (click)="learnBuy2()" cDropdownItem>Quarter Day Meeting</a></li>
+              <li><a [routerLink]="[]" cDropdownItem>Half Day Meeting</a></li>
+              <li><a [routerLink]="[]" cDropdownItem>One Day Meeting</a></li>
+              <li><a [routerLink]="[]" cDropdownItem>Full Day Meeting</a></li>
+              <li><a [routerLink]="[]" cDropdownItem>Fullboard package A</a></li>
+              <li><a [routerLink]="[]" cDropdownItem>Fullboard package B</a></li>
+            </ul>
+          </c-dropdown>
+        </div>
+        <div class="prod-grid">
+          <img src="../assets/img/1.png" alt="kalita" />
+          <h2><b>Upper Hall Ballcony</b></h2>
+          <ul class="bbi">
+                   <li>Lantai      : lantai 4TH</li>
+             <li style="padding-top: 4px;">Panggung     : 11,40 meter x 3 meter</li>
+             <li style="padding-top: 4px;">Dimensi     : 10 meter x 8 meter</li>
+             <li style="padding-top: 4px;">Tinggi      : 3,1 meter</li>
+             <li style="padding-top: 4px;">Makan Minum      : 1-2 kali</li>
+             <li style="padding-top: 4px;">Fasilitas 1   : Meja Kursi</li>
+             <li style="padding-top: 4px;">Fasilitas 2   : Prasmanan</li>
+             <li style="padding-top: 4px;">Fasilitas 3   : Mic & Sound </li>
+             <li style="padding-top: 4px;">Tampungan : 10 - 50 orang</li>
+          </ul>
+          <br />
+          <!-- <button
           type="button"
           (click)="learnBuy2()"
           class="btn red block circular"
         >
           {{ isReadmore ? "Buy Now" : "Read Less" }}
-        </button>
+        </button> -->
+        <c-dropdown>
+          <button class="btn btn-secondary" cButton cDropdownToggle >
+            {{ isReadmore ? "Pilih Paket" : "Read Less" }}
+          </button>
+          <ul class="kentir" cDropdownMenu style="background-color: antiquewhite; margin-top: 10px; ">
+            <li><a (click)="learnBuy2()" cDropdownItem >Quarter Day Meeting</a></li>
+            <li><a [routerLink]="[]" cDropdownItem>Half Day Meeting</a></li>
+            <li><a [routerLink]="[]" cDropdownItem>One Day Meeting</a></li>
+            <li><a [routerLink]="[]" cDropdownItem>Full Day Meeting</a></li>
+            <li><a [routerLink]="[]" cDropdownItem>Fullboard package A</a></li>
+            <li><a [routerLink]="[]" cDropdownItem>Fullboard package B</a></li>
+          </ul>
+        </c-dropdown>
         </div>
         <div class="prod-grid">
-          <img src="../assets/img/m3.png" alt="kalita" />
-          <h2><b>Padjajaran 4</b></h2>
-          <ul class="bbi">
-            <li>Lantai : lantai 4TH</li>
-            <li>Dimensi : 12,5 x 10,5m2</li>
-            <li>Tinggi : 3,1 m</li>
-            <li>Teater : 70 - 100</li>
-            <li>Kelas : 40 - 70</li>
-            <li>Meja bundar : 30 - 50</li>
-            <li>Bentuk-U : 20 - 40</li>
-            <li>Penerimaan : 100 - 150</li>
-          </ul>
-          <br />
-          <button
-          type="button"
-          (click)="learnBuy3()"
-          class="btn red block circular"
-        >
-          {{ isReadmore ? "Buy Now" : "Read Less" }}
-        </button>
+          <h1 class="cms"><b>Coming Soon</b></h1>
         </div>
       </div>
     </section>

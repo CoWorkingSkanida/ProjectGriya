@@ -371,3 +371,32 @@ body {
  }
 }
 
+@media (max-width:1024px) {
+  .navbar .menu-items {
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    overflow: scroll;
+  }
+
+  .item {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 5%;
+  }
+  .navbar .drop-men {
+    position: relative;
+  }
+  .btn {
+    margin-top: 30%;
+  }
+  .ln{
+    margin: 25px;
+    margin-left: 40px;
+    opacity: 0.5;
+    }
+}
