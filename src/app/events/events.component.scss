@@ -64,7 +64,7 @@ ul {
 
 .ptext {
   position: relative;
-  left: 5%;
+  left: 1%;
   margin-right: 5%;
 }
 
@@ -105,10 +105,16 @@ ul {
   }
 
   .ptext {
-    position: relative;
-    left: 5%;
-    text-align: left;
-    margin-right: 5%;
+    margin-bottom: 1%;
+    text-align: justify;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #2c512b;
   }
 
   .specev ul.ph1 {
@@ -194,9 +200,9 @@ ul {
 }
 
 @media (max-width: 767px) {
-  .footer {
-    margin-top: 100px;
-  }
+  // .footer {
+  //   // margin-top: 100px;
+  // }
 
   .footer-col {
     width: 50%;

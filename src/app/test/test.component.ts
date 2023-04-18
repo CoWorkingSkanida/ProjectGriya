@@ -41,4 +41,7 @@ export class TestComponent implements OnInit {
   learnBuy() {
     this.router.navigateByUrl('/meeting');
   }
+  learnBuy2() {
+    this.router.navigateByUrl('/wedding');
+  }
 }

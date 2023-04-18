@@ -96,7 +96,7 @@ ul {
 
 .ptext {
   position: relative;
-  left: 5%;
+  left: 2%;
   margin-right: 5%;
 }
 
@@ -157,20 +157,30 @@ ul {
     margin-right: 5%;
   }
   .ptext {
-    position: relative;
-    left: 5%;
+    margin-top: none;
     text-align: justify;
+    margin-left: 0px;
+    margin-right: 0px;
     font-family: "Montserrat";
-    margin-right: 5%;
-    font-size: 16px;
-    letter-spacing: 0.3px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #2c512b;
+    left: 1px;
   }
   .ptext1 {
-    position: relative;
+    margin-top: none;
     text-align: justify;
+    margin-left: 0px;
+    margin-right: 0px;
     font-family: "Montserrat";
-    margin-right: 8%;
-    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #2c512b;
+    left: 1px;
    
   }
 
@@ -554,6 +564,10 @@ button {
     margin-top: 10%;
   color: #000;
 }
+
+// .spasi{
+//   letter-spacing: normal;
+// }
 .kentir {
   width: 37%;
   }
@@ -575,9 +589,10 @@ button {
     display: none;
   }
   .bbi {
-    text-align: justify;
-    font-family: Montserrat;
-    // font-size: 18px;
+    
+    letter-spacing: 2px;
+    padding: 2%;
+    font-size: 15px;
    
   }
   .prod-grid {
