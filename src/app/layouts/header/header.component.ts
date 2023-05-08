@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+declare const myTest: any;
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -11,7 +13,7 @@ export class HeaderComponent {
   kontol : any
   
   onClick() {
-    console.log("Kontol")
+    myTest();
   }
 
 }

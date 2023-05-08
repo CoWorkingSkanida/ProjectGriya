@@ -2,7 +2,7 @@
 <nav class="navbar fixed-top" style="background-color: rgba(236, 254, 234, 1)">
   <div class="navbar-container container">
     
-    <input type="checkbox"  class="check" id="checked" />
+    <input type="checkbox"  class="check" id="checked" (click)="onClick()" />
     <div class="hamburger-lines">
       <span class="line line1"></span>
       <span class="line line2"></span>
@@ -21,9 +21,7 @@
         <hr class="ln">
       </li>
       <section>
-        <!-- <li class="item"><a  routerLink="/meeting"><span class="sp relative" style="font-family: Montserrat;
-                    font-weight: 500;
-                    color: #2C512B;">MEETING & EVENTS</span></a></li> -->
+ 
         <li class="dd item">
           <a id="room" class="group relative">
             <span class="sp relative"
