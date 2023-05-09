@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+declare const myTest:any;
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
@@ -43,5 +44,9 @@ export class TestComponent implements OnInit {
   }
   learnBuy2() {
     this.router.navigateByUrl('/wedding');
+  }
+
+  onClick() {
+    myTest();
   }
 }
