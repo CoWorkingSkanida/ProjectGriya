@@ -22,7 +22,7 @@ if (burgerMenu && bgOverlay) {
 }
 
 // Close Navbar Menu on Links Click
-document.querySelectorAll(".menu-link").forEach((link) => {
+document.querySelectorAll(".hvr-float-shadow").forEach((link) => {
    link.addEventListener("click", () => {
       navbarMenu.classList.remove("is-active");
       bgOverlay.classList.remove("is-active");
