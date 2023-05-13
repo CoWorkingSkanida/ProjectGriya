@@ -373,6 +373,12 @@ img {
     width: 40%;
   }
 }
+
+@media (max-width:425px) {
+  .menu{
+    width: 70%;
+  }
+}
 [class^="hvr-"] {
   margin: 0.4em;
   //   padding: 1em;
