@@ -1,7 +1,10 @@
-https://www.wismasejahteramgl.com/
-https://www.wismasejahteramgl.com/meeting
-https://www.wismasejahteramgl.com/events
-https://www.wismasejahteramgl.com/wedding
-https://www.wismasejahteramgl.com/facilities
-https://www.wismasejahteramgl.com/room
-https://www.wismasejahteramgl.com/booking
+< ?xml version=” 1.0 encoding=”UTF- 8 ? >
+< urlset xmlns="https://www.wismasejahteramgl.com/sitemap">
+
+< url >
+< loc > https://www.wismasejahteramgl.com/ </loc>
+< lastmod > 2023 - 01 - 01 < /lastmod >
+< changefreq > monthly < /changefreq >
+< prioritas > 1 < /prioritas >
+< /url >
+< /urlset >
