@@ -1,38 +1,64 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+       <loc>https://www.wismasejahteramgl.com/</loc>
+       <lastmod>2023-05-19T15:14:42+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>1.0000</priority>
+  </url>
+</urlset> -->
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-  <loc>https://www.wismasejahteramgl.com/</loc>
-  <lastmod>2023-05-15T07:44:15+00:00</lastmod>
-</url> 
-<url>
-  <loc>https://www.wismasejahteramgl.com/meeting</loc>
-  <lastmod>2023-05-15T07:44:15+00:00</lastmod>
-</url> 
-<url>
- <loc>https://www.wismasejahteramgl.com/events</loc>
-  <lastmod>2023-05-15T07:44:15+00:00</lastmod>
-</url> 
-<url>
- <loc>https://www.wismasejahteramgl.com/wedding</loc>
-  <lastmod>2023-05-15T07:44:15+00:00</lastmod>
-</url> 
-<url>
- <loc>https://www.wismasejahteramgl.com/facilities</loc>
-  <lastmod>2023-05-15T07:44:15+00:00</lastmod>
-</url> 
-<url>
- <loc>https://www.wismasejahteramgl.com/room</loc>
-  <lastmod>2023-05-15T07:44:15+00:00</lastmod>
-</url> 
-<url>
- <loc>https://www.wismasejahteramgl.com/booking</loc>
-  <lastmod>2023-05-15T07:44:15+00:00</lastmod>
-</url> 
+   <url>
+
+      <loc>https://www.wismasejahteramgl.com</loc>
+
+      <lastmod>2023-05-19</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.wismasejahteramgl.com/meeting</loc>
+
+      <changefreq>weekly</changefreq>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.wismasejahteramgl.com/events</loc>
+
+      <lastmod>2023-05-19</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.wismasejahteramgl.com/wedding</loc>
+
+      <lastmod>2023-05-19T15:14:42+00:00</lastmod>
+
+      <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.wismasejahteramgl.com/facilities</loc>
+
+      <lastmod>2023-5-19</lastmod>
+
+   </url>
+
 </urlset>
