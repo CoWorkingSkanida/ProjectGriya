@@ -1,7 +1,7 @@
-https://www.wismasejahteramgl.com/
-https://www.wismasejahteramgl.com/meeting
-https://www.wismasejahteramgl.com/events
-https://www.wismasejahteramgl.com/wedding
-https://www.wismasejahteramgl.com/facilities
-https://www.wismasejahteramgl.com/room
-https://www.wismasejahteramgl.com/booking
+https://www.wismasejahteramgl.com/.html
+https://www.wismasejahteramgl.com/meeting.html
+https://www.wismasejahteramgl.com/events.html
+https://www.wismasejahteramgl.com/wedding.html
+https://www.wismasejahteramgl.com/facilities.html
+https://www.wismasejahteramgl.com/room.html
+https://www.wismasejahteramgl.com/booking.html
