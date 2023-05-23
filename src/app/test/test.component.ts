@@ -47,6 +47,6 @@ export class TestComponent implements OnInit {
   }
 
   onClick() {
-    myTest();
+    // myTest();
   }
 }
