@@ -17,7 +17,7 @@ export class FacilitesComponent implements OnInit {
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: '../assets/img/9.png',
+      src: '../assets/img/karpet.png',
     };
     this.slides[1] = {
       src: '../assets/img/11.png',

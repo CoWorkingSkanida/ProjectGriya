@@ -31,7 +31,7 @@ export class TestComponent implements OnInit {
       src: '../assets/img/5.png',
     };
     this.slides[3] = {
-      src: '../assets/img/karpet edited.png',
+      src: '../assets/img/karpet.png',
     };
   }
 
@@ -47,6 +47,6 @@ export class TestComponent implements OnInit {
   }
 
   onClick() {
-    myTest();
+    // myTest();
   }
 }

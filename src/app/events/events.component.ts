@@ -15,10 +15,10 @@ export class EventsComponent {
       src: '../assets/img/m3.png',
     };
     this.slides[1] = {
-      src:  '../assets/img/events (2).JPG',
+      src:  '../assets/img/events (2).jpg',
     }
     this.slides[2] = {
-      src:  '../assets/img/events (3).JPG',
+      src:  '../assets/img/events (3).jpg',
     }
   }
 } 
