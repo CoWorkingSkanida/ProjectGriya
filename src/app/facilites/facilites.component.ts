@@ -1,16 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as puppeteer from 'puppeteer';
-
-async function runCrawler() {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  await page.goto('https://www.wismasejahteramgl.com/facilities');
-  const pageTitle = await page.title();
-  console.log('Wisma Sejahtera Magelang', pageTitle);
-  await browser.close();
-}
-
-runCrawler();
 
 @Component({
   selector: 'app-facilites',
