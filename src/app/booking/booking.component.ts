@@ -15,8 +15,6 @@ export class BookingComponent {
   phoneNumber = '+6281325852102';
 
   learnBuy4(){
-    // this.router.navigateByUrl('/https://api.whatsapp.com/send?phone=+628988735324&text=apakah%20masih%20ada%20kamar?');
-
 
     const whatsappLink = `https://api.whatsapp.com/send?phone=${this.phoneNumber}&text=${encodeURIComponent(this.message4)}`;
 
