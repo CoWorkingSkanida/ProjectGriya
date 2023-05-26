@@ -1,7 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import * as puppeteer from 'puppeteer';
+
+async function runCrawler() {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto('https://www.wismasejahteramgl.com');
+  const pageTitle = await page.title();
+  console.log('Wisma Sejahtera Magelang:', pageTitle);
+  await browser.close();
+}
+
+runCrawler();
 
 declare const myTest:any;
+
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
