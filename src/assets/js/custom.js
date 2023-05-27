@@ -36,6 +36,13 @@ document.querySelectorAll(".btn ").forEach((link) => {
    });
 });
 
+document.querySelectorAll(".list-item ").forEach((link) => {
+   link.addEventListener("click", () => {
+      navbarMenu.classList.remove("is-active");
+      bgOverlay.classList.remove("is-active");
+   });
+});
+
 // Open and Close Search Bar Toggle
 const searchBlock = document.querySelector(".search-block");
 const searchToggle = document.querySelector(".search-toggle");
