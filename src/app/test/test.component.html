@@ -6,24 +6,11 @@
           <c-carousel-indicators></c-carousel-indicators>
           <c-carousel-inner>
             <c-carousel-item *ngFor="let slide of slides">
-              <img
-                [src]="slide.src"
-                alt="{{ slide.title }}"
-                class="d-block w-100 h-100"
-                loading="lazy"
-              />
+              <img [src]="slide.src" alt="{{ slide.title }}" class="d-block w-100 h-100" loading="lazy" />
             </c-carousel-item>
           </c-carousel-inner>
-          <c-carousel-control
-            [routerLink]
-            caption="Previous"
-            direction="prev"
-          ></c-carousel-control>
-          <c-carousel-control
-            [routerLink]
-            caption="Next"
-            direction="next"
-          ></c-carousel-control>
+          <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+          <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
         </c-carousel>
       </div>
       <div class="column">
@@ -38,23 +25,20 @@
           </ul>
         </div>
         <p class="ptext">
-          
-        Wisma Sejahtera Magelang dengan Meeting, Incentive, Convention, Exhibition (MICE),
-        MEETING atau persidangan merupakan hal yang lazim dalam sebuah rapat, kami menyediakan ruang rapat untuk 
-        kelompok orang yang tergabung dalam suatu asosiasi, organisasi atau perserikatan.
-        
-        Kami
-        sediakan ruang INSENTIF untuk pengusaha dan karyawan 
-        dalam kegiatan perjalanan yang diselenggarakan 
-        oleh suatu perusahaan untuk para karyawan dan mitra usaha sebagai imbalan penghargaan atas prestasi mereka.
-        
-        CONVENSION
-        kami sediakan ruangan pertemuan untuk sekelompok orang (negarawan, usahawan, dan sebagainya) untuk
-        membahas masalah-masalah yang berkaitan dengan kepentingan bersama.
 
-        EXHIBITION
-        Kami bersedia memamerkan kegiatan untuk menyebarluaskan informasi dan promosi yang ada hubungannya dengan 
-        penyelenggaraan konvensi atau yang ada kaitannya dengan pariwisata anda.
+          Wisma Sejahtera Magelang with Meetings, Incentives, Conventions, Exhibitions (MICE), MEETING or trials are
+          commonplace at a meeting, we provide meeting rooms for groups of people who are members of an association,
+          organization or union. We provide INCENTIVE space for employers and employees in travel activities organized
+          by a company for employees and business partners in return for appreciation for their achievements. CONVENSION
+          We provide a meeting room for a group of people (statesmen, businessmen, and so on) to discuss issues related
+          to common interests. EXHIBITION We are willing to exhibit activities to disseminate information and promotions
+          that have something to do with holding conventions or that have something to do with your tourism.
+
+          Located 20.9 km from Borobudur Temple, Wisma Sejahtera Hotel offers 2-star accommodation in Magelang and has a
+          terrace. With a garden, this 2-star hotel has air-conditioned rooms with free Wi-Fi, each with a private
+          bathroom. The hotel has family rooms. The rooms at this hotel are equipped with a flat-screen TV. Yogyakarta
+          Tugu Station is 45.1 km from the hotel Wisma Sejahtera, while Yogyakarta Monument is 45.1 km from the
+          property. The nearest airport is Adisutjipto International Airport, 51.5 km from the accommodation.
         </p>
         <div class="">
           <!-- <a routerLink="/booking" class="btn red block circular">
@@ -62,17 +46,15 @@
           </a> -->
           <div class="ptext1" style="margin-left: 1, 2px">
             <div [ngClass]="{ limitTextHeight: isReadmore }">
-              Terletak 20,9 km dari Candi Borobudur, wisma sejahtera hotel menawarkan akomodasi bintang 2 di Magelang dan memiliki teras. Dengan taman, hotel bintang 2 ini memiliki kamar-kamar ber-AC dengan Wi-Fi gratis, masing-masing dengan kamar mandi pribadi. Hotel ini memiliki kamar keluarga.
-              Kamar-kamar di hotel ini dilengkapi dengan TV layar datar.
-              Stasiun Tugu Yogyakarta berjarak 45,1 km dari hotel wisma sejahtera, sedangkan Tugu Yogyakarta berjarak 45,1 km dari properti. Bandara terdekat adalah Bandara Internasional Adisutjipto, 51,5 km dari akomodasi.
+              Located 20.9 km from Borobudur Temple, Wisma Sejahtera Hotel offers 2-star accommodation in Magelang and
+              has a terrace. With a garden, this 2-star hotel has air-conditioned rooms with free Wi-Fi, each with a
+              private bathroom. The hotel has family rooms. The rooms at this hotel are equipped with a flat-screen TV.
+              Yogyakarta Tugu Station is 45.1 km from the hotel Wisma Sejahtera, while Yogyakarta Monument is 45.1 km
+              from the property. The nearest airport is Adisutjipto International Airport, 51.5 km from the
+              accommodation.
             </div>
           </div>
-          <button
-            type="button"
-            id="foo"
-            (click)="showText()"
-            class="hohoho rrm btn red block circular"
-          >
+          <button type="button" id="foo" (click)="showText()" class="hohoho rrm btn red block circular">
             {{ isReadmore ? "Learn More" : "Read Less" }}
           </button>
         </div>
@@ -86,16 +68,12 @@
           <p class="tx1" style="font-size: 18px; color: rgba(0, 0, 0, 0.62)">
             Start from Rp.65.000,00
           </p>
-          <button
-            type="button"
-            (click)="learnBuy()"
-            class="btn red block circular"
-          >
+          <button type="button" (click)="learnBuy()" class="btn red block circular">
             {{ isReadmore ? "Learn More" : "Read Less" }}
           </button>
         </div>
         <div class="im">
-         <img class="imeg" src="../assets/img/5.png" />
+          <img class="imeg" src="../assets/img/5.png" />
         </div>
       </div>
       <div class="mid1">
@@ -104,11 +82,7 @@
           <!-- <p class="tx1" style="font-size: 18px; color: rgba(0, 0, 0, 0.62)">
             Just Rp 15.000.000,00
           </p> -->
-          <button
-            type="button"
-            (click)="learnBuy2()"
-            class="btn red block circular"
-          >
+          <button type="button" (click)="learnBuy2()" class="btn red block circular">
             {{ isReadmore ? "Learn More" : "Read Less" }}
           </button>
         </div>
@@ -124,9 +98,7 @@
         <div class="row">
           <div class="footer-col">
             <div class="social-links">
-              <a href="https://wa.me/+6281325852102" target="_blank"
-                ><i class="fab fa-whatsapp"></i
-              ></a>
+              <a href="https://wa.me/+6281325852102" target="_blank"><i class="fab fa-whatsapp"></i></a>
               <a href="https://twitter.com/SejahteraWisma"><i class="fab fa-twitter"></i></a>
               <a href="https://www.instagram.com/wismasejahteramagelang/"><i class="fab fa-instagram"></i></a>
               <a href="https://www.youtube.com/@wismasejahtera6019"><i class="fab fa-youtube"></i></a>
@@ -135,23 +107,18 @@
           <div class="footer-col">
             <ul>
               <li>
-                <a href="https://goo.gl/maps/CfY3dRzw8DtjmTAf9"
-                  >Jl. Serayu II No.44, Kedungsari, Kec. Magelang Utara,
+                <a href="https://goo.gl/maps/CfY3dRzw8DtjmTAf9">Jl. Serayu II No.44, Kedungsari, Kec. Magelang Utara,
                 </a>
               </li>
               <li>
-                <a href="https://goo.gl/maps/CfY3dRzw8DtjmTAf9"
-                  > Kota Magelang, Jawa Tengah 59155</a
-                >
+                <a href="https://goo.gl/maps/CfY3dRzw8DtjmTAf9"> Kota Magelang, Jawa Tengah 59155</a>
               </li>
               <div class="karepe" style="margin-top: 25px">
                 <li>
                   <a href="https://wa.me/+6281325852102">Phone : (0293) 362185</a>
                 </li>
                 <li>
-                  <a href="mailto:wismasejahtera@gmail.com"
-                    >Email : wismasejahtera @gmail.com</a
-                  >
+                  <a href="mailto:wismasejahtera@gmail.com">Email : wismasejahtera @gmail.com</a>
                 </li>
               </div>
             </ul>
