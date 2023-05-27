@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./events.component.scss']
 })
 export class EventsComponent {
-  slides: any[] = new Array(3).fill({id: -1, src: '', title: '', subtitle: ''});
+  slides: any[] = new Array(3).fill({ id: -1, src: '', title: '', subtitle: '' });
 
   constructor() { }
 
@@ -15,10 +15,10 @@ export class EventsComponent {
       src: '../assets/img/m3.png',
     };
     this.slides[1] = {
-      src:  '../assets/img/events (2).jpg',
+      src: '../assets/img/m4.png',
     }
     this.slides[2] = {
-      src:  '../assets/img/events (3).jpg',
+      src: '../assets/img/m5.png',
     }
   }
 } 

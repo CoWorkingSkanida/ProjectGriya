@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 declare const myTest:any;
+
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
