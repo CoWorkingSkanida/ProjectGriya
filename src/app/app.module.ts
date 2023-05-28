@@ -27,6 +27,9 @@ import { DefaultComponent } from './default/default.component';
 import { DefaultModule } from './default/default.module';
 import { WeddingComponent } from './wedding/wedding.component';
 import { MeetingComponent } from './meeting/meeting.component';
+import { InsentivesComponent } from './insentives/insentives.component';
+import { ConvensionComponent } from './convension/convension.component';
+import { ExhibittonComponent } from './exhibitton/exhibitton.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +44,9 @@ import { MeetingComponent } from './meeting/meeting.component';
     DefaultComponent,
     WeddingComponent,
     MeetingComponent,
+    InsentivesComponent,
+    ConvensionComponent,
+    ExhibittonComponent,
   ],
   imports: [
     BrowserModule,
