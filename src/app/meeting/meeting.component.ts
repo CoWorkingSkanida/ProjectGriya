@@ -7,6 +7,13 @@ import { Router, Route, RouterLinkWithHref } from '@angular/router';
   styleUrls: ['./meeting.component.scss']
 })
 export class MeetingComponent implements OnInit {
+   
+  longText1 = `We provide facilities from AC, LCD, Wifi, White board, Soundsystem, Room setting, Coffee break, accommodating 25-50 people`;
+  longText2 =   `We provide facilities from AC, LCD, Wifi, white board, sound system, room settings, coffee break 2 times, meal 1 time, accommodating 25-50 people`;
+  longText3 =   `We provide facilities from AC, LCD, Wifi, white board, sound system, room settings, coffee break 2 times, meal 1 time`;
+  longText4 =   `We provide facilities from AC, LCD, Wifi, white board, sound system, room settings, coffee break 2 times, meal 1 time`;
+  longText5 =   `We provide facilities from AC, LCD, Wifi, white board, sound system, room settings, coffee break 2 times, meal 1 time`;
+  longText6 =   `We provide facilities from AC, LCD, Wifi, white board, sound system, room settings, coffee break 2 times, meal 1 time`;
 
   isLearnbuy = true;
   isReadmore = true;

@@ -31,6 +31,8 @@ import { InsentivesComponent } from './insentives/insentives.component';
 import { ConvensionComponent } from './convension/convension.component';
 import { ExhibittonComponent } from './exhibitton/exhibitton.component';
 import { ExhibitionComponent } from './exhibition/exhibition.component';
+import {MatCardModule} from '@angular/material/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,6 +66,7 @@ import { ExhibitionComponent } from './exhibition/exhibition.component';
     NavModule,
     DropdownModule,
     DefaultModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent],
