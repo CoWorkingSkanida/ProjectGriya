@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-
-declare const myTest: any;
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,12 +7,12 @@ declare const myTest: any;
   styleUrls: ['./header.component.scss']
 })
 
-export class HeaderComponent {
-
-  kontol : any
+export class HeaderComponent   {
   
-  onClick() {
-    myTest();
-  }
+  constructor(private router: Router) {}
+ 
 
+  // link() {
+  //   this.router.navigateByUrl('/ex');
+  // }
 }
