@@ -70,6 +70,7 @@
         flex-direction: column;
         justify-content: center;
     }
+
     .cont {
         margin-left: 5%;
         margin-right: 5%;
@@ -78,17 +79,20 @@
         align-items: center;
         flex-direction: column;
     }
+
     .vl {
         border-left: 3px solid #000000;
         height: 30px;
         opacity: 0;
     }
+
     .vl1 {
         margin-left: 1%;
         border-left: 3px solid #000000;
         height: 0px;
         opacity: 0;
     }
+
     .co {
         position: relative;
         margin-top: 0;
@@ -97,6 +101,7 @@
         margin-right: 0%;
         flex-direction: column;
     }
+
     .specev ul.ph1 {
         display: flex;
         justify-content: center;
@@ -105,6 +110,7 @@
         min-width: 200px;
         margin-top: 10%;
     }
+
     .kamarmndi {
         margin-top: 10px;
         text-align: left;
@@ -121,9 +127,9 @@
     padding-bottom: 370px;
 }
 
-h1 {
-    text-align: center;
-    color: #ffffff;
+.title {
+    padding-top: 20px;
+    padding-left: 3%;
 }
 
 .row {
@@ -159,11 +165,6 @@ ul {
     padding-bottom: 370px;
 }
 
-h1 {
-    text-align: center;
-    color: #ffffff;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -194,14 +195,8 @@ ul {
 }
 
 .footer-col {
-    width: 25%;
-    padding-left: 2%;
-}
-
-@media (max-width:768px) {
-    .footer-col {
-        width: auto;
-    }
+    width: auto;
+    padding-left: 15%;
 }
 
 .footer-col h4 {
@@ -261,18 +256,205 @@ ul {
     background-color: #2a4b2a;
 }
 
+@media (max-width:1024px) {
+    .social-links {
+        margin-top: 13%;
+    }
+}
+
+@media (max-width:768px) {
+    .footer-col {
+        width: auto;
+    }
+    .title {
+        text-align: center;
+    }
+}
+
 @media (max-width: 767px) {
     .footer {
         margin-top: 100px;
     }
+
     .footer-col {
-        width: 50%;
+        width: auto;
         margin-bottom: 30px;
     }
 }
 
 @media (max-width: 574px) {
     .footer-col {
-        width: 100%;
+        width: auto;
     }
+}
+
+@media (max-width:425px) {
+    .social-links {
+        margin-top: 4%;
+    }
+
+    .row {
+        margin-left: 4%;
+    }
+
+    .title p {
+        text-align: center;
+        font-size: 40px;
+    }
+}
+
+@media (max-width:320px) {
+    .title p {
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
+.title-white {
+    color: white;
+}
+
+.title-black {
+    color: black;
+}
+
+
+
+.title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height */
+    color: #2C512B;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.con {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 400px;
+    height: 500px;
+    margin: 35px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.22), 10px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 0.4s;
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    text-align: center;
+    background-color: #457543;
+}
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+}
+
+.card img {
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+}
+
+.card:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.22), 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+@media all and (max-width: 500px) {
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+
+    .card {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .con {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 380px;
+    }
+}
+
+@media (max-width: 375px) {
+    .con {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 280px;
+    }
+}
+
+.texto {
+    text-align: start;
+    color: white;
+    padding: 16px;
+}
+.fa-solid{
+    font-size: x-large;
 }
