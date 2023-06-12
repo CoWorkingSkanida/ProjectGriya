@@ -1,3 +1,15 @@
-// .example-card {
-//   // max-width: 400px;
-// }
+.content-wrapper {
+    background-image: url('../../assets/img/ngs.png');
+    background-size: cover;
+    background-position: center;
+    padding: 150px;
+    color: #000000;
+    margin-top: 20%;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .content-wrapper{
+        background-position: right;
+    }
+  }

@@ -11,7 +11,6 @@ import { WeddingComponent } from './wedding/wedding.component';
 import { MeetingComponent } from './meeting/meeting.component';
 import { InsentivesComponent } from './insentives/insentives.component';
 import { ConvensionComponent } from './convension/convension.component';
-import { ExhibittonComponent } from './exhibitton/exhibitton.component';
 import { ExhibitionComponent } from './exhibition/exhibition.component';
 
 
@@ -32,9 +31,9 @@ const routes: Routes = [
       { path: 'wedding', component: WeddingComponent },
       { path: 'booking', component: BookingComponent },
       { path: 'meeting', component: MeetingComponent },
-      { path: 'insen', component: InsentivesComponent },
-      { path: 'conves', component: ConvensionComponent },
-      { path: 'exhib', component: ExhibitionComponent },
+      { path: 'convex', component: InsentivesComponent },
+      // { path: 'conves', component: ConvensionComponent },
+      // { path: 'exhib', component: ExhibitionComponent },
     ],
   },
 ];

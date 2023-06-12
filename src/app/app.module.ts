@@ -29,7 +29,6 @@ import { WeddingComponent } from './wedding/wedding.component';
 import { MeetingComponent } from './meeting/meeting.component';
 import { InsentivesComponent } from './insentives/insentives.component';
 import { ConvensionComponent } from './convension/convension.component';
-import { ExhibittonComponent } from './exhibitton/exhibitton.component';
 import { ExhibitionComponent } from './exhibition/exhibition.component';
 import {MatCardModule} from '@angular/material/card';
 
@@ -49,8 +48,6 @@ import {MatCardModule} from '@angular/material/card';
     MeetingComponent,
     InsentivesComponent,
     ConvensionComponent,
-    ExhibittonComponent,
-    ExhibitionComponent,
   ],
   imports: [
     BrowserModule,
