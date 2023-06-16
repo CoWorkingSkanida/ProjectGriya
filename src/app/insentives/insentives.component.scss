@@ -2,75 +2,151 @@
   margin-top: 2cm;
 }
 
-.content-wrapper {
+.background1 {
     background-image: url('../../assets/img/ngs.png');
     background-size: cover;
     background-position: center;
-    padding: 150px;
+    padding: 100px;
+    height: 504px;
+    width: auto;
+    
+  }
+
+  .btext1{
     color: #2C512B;
     text-align: left;
     font-size: 20px;
     font-family: 'Poppins';
+    position: absolute;
+    top: 25%;
+    left: 7.5%;
   }
 
-  .content-wrapper h1 {
+  .btext1 h1 {
+    font-size: 35px;
+    font-family: 'Poppins';
+    color: #2C512B;
+    font-weight: 1000;
+    
+  }
+
+  @media (max-width: 768px) {
+    .background1{
+        background-position: right;
+        filter: blur(5px);
+        
+    }
+    .btext1{
+      text-align: left;
+        padding-left: 40px;
+        font-size: 15px;
+        color: #020202;
+        top: 20%;
+        right: 10%;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .btext1{
+      text-align: left;
+        padding-left: 0px;
+        font-size: 15px;
+        top: 20%;
+        left: 10%;
+    }
+  }
+  @media (max-width: 375px) {
+    .btext1{
+      text-align: left;
+        padding-left: 0px;
+        font-size: 15px;
+        top: 20%;
+        left: 10%;
+    }
+  }
+
+  .background {
+    background-image: url('../../assets/img/ngs1.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    height: 504px;
+    width: auto;
+  }
+
+  .btext h1 {
     font-size: 35px;
     font-family: 'Poppins';
     color: #2C512B;
     font-weight: 1000;
   }
 
-  @media (max-width: 768px) {
-    .content-wrapper{
-        background-position: right;
-        text-align: left;
-        padding-left: 40px;
-        font-size: 15px;
-        color: #020202;
-    }
-  }
-
-  .content-wrapper1 {
-    background-image: url('../../assets/img/ngs1.png');
-    background-size: cover;
-    background-position: center;
-    padding: 150px;
+  .btext{
     color: #2C512B;
     // margin-top: 20%;
     text-align: right;
     font-size: 20px;
     font-family: 'Poppins';
-  }
-
-  .content-wrapper1 h1 {
-    font-size: 35px;
-    font-family: 'Poppins';
-    color: #2C512B;
-    font-weight: 1000;
+    position: absolute;
+    top: 750px;
+    right: 7.5%;
   }
 
   @media (max-width: 768px) {
-    .content-wrapper1{
+    .background{
         background-position: left;
-        text-align: left;
+        filter: blur(5px);
+        
+    }
+    .btext{
+      text-align: left;
         padding-left: 40px;
         font-size: 15px;
+        top: 725px;
+        right: 10%;
     }
   }
 
-  .content-wrapper2 {
+  @media (max-width: 425px) {
+    .btext{
+      text-align: left;
+        padding-left: 40px;
+        font-size: 15px;
+        top: 700px;
+        right: 10%;
+    }
+  }
+  @media (max-width: 375px) {
+    .btext{
+      text-align: left;
+        padding-left: 40px;
+        font-size: 15px;
+        top: 675px;
+        right: 10%;
+    }
+  }
+
+  .background2 {
     background-image: url('../../assets/img/ngs.png');
     background-size: cover;
     background-position: center;
-    padding: 150px;
+    padding: 100px;
+    height: 504px;
+    width: auto;
+    
+  }
+
+  .btext2 {
     color: #2C512B;
-    // margin-top: 20%;
     text-align: left;
     font-size: 20px;
     font-family: 'Poppins';
+    position: absolute;
+    top: 1250px;
+    left: 7.5%;
   }
 
-  .content-wrapper2 h1 {
+  .btext2 h1 {
     font-size: 35px;
     font-family: 'Poppins';
     color: #2C512B;
@@ -78,11 +154,37 @@
   }
 
   @media (max-width: 768px) {
-    .content-wrapper2{
+    .background2{
         background-position: right;
-        text-align: left;
+        filter: blur(5px);
+        
+    }
+    .btext2{
+      text-align: left;
         padding-left: 40px;
         font-size: 15px;
+        color: #020202;
+        top: 1225px;
+        right: 10%;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .btext2{
+      text-align: left;
+        padding-left: 0px;
+        font-size: 15px;
+        top: 1200px;
+        left: 10%;
+    }
+  }
+  @media (max-width: 375px) {
+    .btext2{
+      text-align: left;
+        padding-left: 0px;
+        font-size: 15px;
+        top: 1175px;
+        left: 10%;
     }
   }
 
