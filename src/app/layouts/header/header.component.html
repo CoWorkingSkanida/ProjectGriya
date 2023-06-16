@@ -11,18 +11,15 @@
       <ul class="menu-inner">
         <a routerLink="/" class="hvr-float-shadow">Home</a>
         <hr>
-        <div class="container">
-          <div class="menus">
-            <button class="toggle">MICE</button>
-            <ul class="list">
-              <li class="list-item" routerLink="meeting" style="--delay:0.0s" > MEETING</li>
-              <li class="list-item" routerLink="insen" style="--delay:0.1s">INSENTIVES</li>
-              <li class="list-item" routerLink="convex" style="--delay:0.2s">CONVENSION</li>
-              <li class="list-item" routerLink="exhib" style="--delay:0.3s">EXHIBITION</li>
-            </ul>
-          </div>
-        </div>
-        <!-- <a routerLink="meeting" class="hvr-float-shadow" style="letter-spacing: 2px;">MICE</a> -->
+        <c-dropdown class="dd">
+          <a cButton cDropdownToggle>
+            MICE
+          </a>
+          <ul cDropdownMenu class="dm" >
+            <li><a routerLink="meeting" cDropdownItem>Metting and Insentive</a></li>
+            <li><a routerLink="convex" cDropdownItem>Convention and Exhibittion</a></li>
+          </ul>
+        </c-dropdown>
         <hr>
         <a routerLink="events" class="hvr-float-shadow">Events</a>
         <hr>
@@ -32,24 +29,16 @@
         <hr>
         <a routerLink="room" class="hvr-float-shadow">Room</a>
         <hr>
-        <!-- <a href="booking" class="hvr-float-shadow">Booking</a> -->
         <div class="border-t py-6 px-4 md:px-12 md:py-16 lg:border-t-0 lg:border-l lg:py-0 lg:pr-0 lg:pl-6 ">
           <a routerLink="/booking" class="btn red block circular ">
             BOOKING
           </a>
         </div>
-        <!-- <li class="menu-item1"><a class="menu-link" href="./index.html">Home <hr></a></li>
-           <li class="menu-item"><a class="menu-link" routerLink="meeting">Meeting</a></li>
-           <li class="menu-item"><a class="menu-link" routerLink="event">Events</a></li>
-           <li class="menu-item"><a class="menu-link" routerLink="wedding">Wedding</a></li>
-           <li class="menu-item"><a class="menu-link" routerLink="facilities">Facilities</a></li>
-           <li class="menu-item"><a class="menu-link" routerLink="room">Room</a></li>
-           <li class="menu-item2"><a class="menu-link" routerLink="booking">Booking</a></li> -->
       </ul>
     </div>
 
   </nav>
-</header>
+</header> 
 
 <!-- <nav class="navbar fixed-top" style="background-color: rgba(236, 254, 234, 1)">
    <div class="navbar-container container">
@@ -129,4 +118,4 @@
        <img src="../../assets/img/WSH.png" alt="" class="w-32" />
      </h1>
    </div>
- </nav> -->
+ </nav> --->
