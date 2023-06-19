@@ -1,5 +1,7 @@
 .content{
   margin-top: 2cm;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-wrapper {
@@ -197,6 +199,13 @@ kon {
   }
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1920px;
+  margin: 0px;
+  justify-content: space-between;
+}
 @media (max-width:425px) {
   .social-links {
       margin-top: 4%;
