@@ -20,5 +20,8 @@ export class EventsComponent {
     this.slides[2] = {
       src: '../assets/img/m5.png',
     }
+    this.slides[2] = {
+      src: '../assets/img/Hall.jpg',  
+    }
   }
 } 
