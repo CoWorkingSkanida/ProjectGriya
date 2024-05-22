@@ -50,25 +50,25 @@ export class MeetingComponent implements OnInit {
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: '../assets/img/1.png',
+      src: '../assets/img/BG1.jpg',
     };
     this.slides[1] = {
-      src: '../assets/img/2.png',
+      src: '../assets/img/BG2.jpg',
     }
     this.slides[2] = {
-      src: '../assets/img/3.png',
+      src: '../assets/img/BG3.jpg',
     }
     this.slides[3] = {
-      src: '../assets/img/4.png',
+      src: '../assets/img/BG4.jpg',
     }
     this.slides[4] = {
-      src: '../assets/img/m1.png',
+      src: '../assets/img/BG5.jpg',
     }
     this.slides[5] = {
-      src: '../assets/img/m2.png',
+      src: '../assets/img/BG6.jpg',
     }
     this.slides[6] = {
-      src: '../assets/img/m3.png',
+      src: '../assets/img/Hall.jpg',
     }
   }
 
