@@ -50,7 +50,7 @@ export class TestComponent implements OnInit {
   }
 
   learnBuy() {
-    this.router.navigateByUrl('/Hall.jpg');
+    this.router.navigateByUrl('/5.png');
   }
   learnBuy2() {
     this.router.navigateByUrl('/wedding');
